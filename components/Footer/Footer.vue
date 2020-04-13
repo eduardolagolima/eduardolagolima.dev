@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer custom-footer">
+  <footer class="custom-footer">
     <div class="content has-text-centered">
       <p>
         <a href="mailto:eduardolagolima@gmail.com">eduardolagolima@gmail.com</a>
@@ -11,8 +11,7 @@
 
 <style scoped>
 .custom-footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 3rem;
   background-color: #7957d5;
 }
 .custom-footer p {

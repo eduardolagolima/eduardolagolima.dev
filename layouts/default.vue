@@ -1,12 +1,12 @@
 <template>
-  <div class="body">
+  <div class="app">
     <Header />
 
-    <section class="main-content columns">
+    <div class="main-content columns">
       <div class="container column">
         <nuxt />
       </div>
-    </section>
+    </div>
 
     <Footer />
   </div>

@@ -1,10 +1,10 @@
 <template>
-  <div class="body">
+  <div class="app">
     <Header />
 
-    <section class="main-content columns is-centered is-vcentered is-mobile">
+    <div class="main-content columns is-centered is-vcentered is-mobile">
       <nuxt />
-    </section>
+    </div>
 
     <Footer />
   </div>

@@ -1,7 +1,7 @@
 <template>
   <section class="section">
-    <h2 class="title is-3 has-text-grey">
+    <h3 class="title is-3 has-text-grey">
       Experiência
-    </h2>
+    </h3>
   </section>
 </template>

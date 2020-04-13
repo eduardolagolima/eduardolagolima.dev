@@ -1,8 +1,8 @@
 <template>
   <section class="section">
-    <h2 class="title is-3 has-text-grey">
+    <h3 class="title is-3 has-text-grey">
       Projetos
-    </h2>
+    </h3>
 
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-parent">
@@ -28,7 +28,7 @@ export default {
     projects: {
       personalWebSite: {
         name: 'eduardolagolima.dev',
-        description: 'Este site pessoal :)',
+        description: 'Este site que você está usando :)',
         urlGithub: 'https://github.com/eduardolagolima/eduardolagolima.dev',
         urlProduction: 'https://eduardolagolima.dev/',
         type: 'is-info',

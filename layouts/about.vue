@@ -2,10 +2,8 @@
   <div class="body">
     <Header />
 
-    <section class="main-content columns">
-      <div class="container column">
-        <nuxt />
-      </div>
+    <section class="main-content columns is-centered is-vcentered is-mobile">
+      <nuxt />
     </section>
 
     <Footer />

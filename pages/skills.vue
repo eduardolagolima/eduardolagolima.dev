@@ -1,8 +1,8 @@
 <template>
   <section class="section">
-    <h2 class="title is-3 has-text-grey">
+    <h3 class="title is-3 has-text-grey">
       Habilidades
-    </h2>
+    </h3>
 
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-parent">
@@ -40,12 +40,12 @@ export default {
         },
         {
           name: 'Node.js',
-          value: 70,
+          value: 60,
           type: 'is-success'
         },
         {
           name: 'Express.js',
-          value: 70,
+          value: 60,
           type: 'is-darkgrey'
         }
       ],
@@ -59,6 +59,18 @@ export default {
           name: 'MongoDB',
           value: 60,
           type: 'is-success'
+        }
+      ],
+      devops: [
+        {
+          name: 'Docker',
+          value: 70,
+          type: 'is-info'
+        },
+        {
+          name: 'Shell Script',
+          value: 60,
+          type: 'is-darkgrey'
         }
       ],
       frontend: [
@@ -80,7 +92,7 @@ export default {
         },
         {
           name: 'HTML',
-          value: 80,
+          value: 90,
           type: 'is-danger'
         },
         {
@@ -89,22 +101,10 @@ export default {
           type: 'is-info'
         }
       ],
-      devops: [
-        {
-          name: 'Docker',
-          value: 70,
-          type: 'is-info'
-        },
-        {
-          name: 'Shell Script',
-          value: 60,
-          type: 'is-darkgrey'
-        }
-      ],
       others: [
         {
           name: 'Linux',
-          value: 70,
+          value: 80,
           type: 'is-darkgrey'
         },
         {

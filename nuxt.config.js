@@ -31,7 +31,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/css/global.css'],
+  css: [
+    '~/assets/css/global.css',
+    '~/node_modules/bulma-timeline/dist/css/bulma-timeline.min.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */

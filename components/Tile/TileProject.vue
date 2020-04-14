@@ -5,6 +5,10 @@
     <div class="content">
       <ul>
         <li>
+          <span>Tecnologias usadas:</span>
+          <strong>{{ project.techs.join(', ') }}</strong>
+        </li>
+        <li>
           <span>Projeto no github:</span>
           <a target="_blank" :href="project.urlGithub"><strong>Link</strong></a>
         </li>
@@ -13,10 +17,6 @@
           <a target="_blank" :href="project.urlProduction"
             ><strong>Link</strong></a
           >
-        </li>
-        <li>
-          <span>Tecnologias usadas:</span>
-          <strong>{{ project.techs.join(', ') }}</strong>
         </li>
       </ul>
     </div>

@@ -3,14 +3,14 @@
     <p class="title">{{ title }}</p>
     <div class="content">
       <b-progress
-        v-for="({ name, value, colorType }, key) of skills"
+        v-for="(skill, key) of skills"
         :key="key"
         size="is-large"
-        :type="colorType"
-        :value="value"
+        :type="skill.colorType"
+        :value="skill.value"
         show-value
       >
-        {{ name }}
+        {{ skill.name }}
       </b-progress>
     </div>
   </article>

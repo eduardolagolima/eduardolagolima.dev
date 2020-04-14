@@ -25,31 +25,12 @@
 </template>
 
 <script>
+import contacts from '~/data/contacts.json'
+
 export default {
   layout: 'about',
   data: () => ({
-    contacts: [
-      {
-        url: 'https://github.com/eduardolagolima',
-        icon: 'github'
-      },
-      {
-        url: 'https://www.linkedin.com/in/eduardolagolima/',
-        icon: 'linkedin'
-      },
-      {
-        url: 'mailto:eduardolagolima@gmail.com',
-        icon: 'email'
-      },
-      {
-        url: 'https://twitter.com/eduardolagolima',
-        icon: 'twitter'
-      },
-      {
-        url: 'https://instagram.com/eduardolagolima',
-        icon: 'instagram'
-      }
-    ]
+    contacts
   })
 }
 </script>

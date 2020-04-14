@@ -46,61 +46,17 @@
 import TileCourse from '~/components/Tile/TileCourse'
 import TileEvent from '~/components/Tile/TileEvent'
 
+import courses from '~/data/courses.json'
+import events from '~/data/events.json'
+
 export default {
   components: {
     TileCourse,
     TileEvent
   },
   data: () => ({
-    courses: {
-      semanaOmnistack11: {
-        name: 'Semana OmniStack 11',
-        date: 'Março de 2020',
-        school: 'Rocketseat',
-        hours: 10,
-        urlCertificate:
-          'https://www.dropbox.com/s/d1nejvkeyvrxmqs/semanaOmnistack11.pdf?dl=0'
-      },
-      semanaOmnistack10: {
-        name: 'Semana OmniStack 10',
-        date: 'Janeiro de 2020',
-        school: 'Rocketseat'
-      },
-      cssFlexbox: {
-        name: 'CSS Flexbox',
-        date: 'Outubro de 2019',
-        school: 'Origamid',
-        hours: 6,
-        urlCertificate:
-          'https://www.dropbox.com/s/tm2kypinhmoutv6/cssFlexbox.pdf?dl=0'
-      }
-    },
-    events: {
-      pgConfBrazil2019: {
-        name: 'PGConf Brasil 2019',
-        location: 'São Paulo/SP',
-        date: '02 e 03 de Agosto de 2019',
-        hours: 16,
-        urlCertificate:
-          'https://www.dropbox.com/s/7qidwgu8whmfwkc/pgConfBrazil2019.pdf?dl=0'
-      },
-      phpExperience2019: {
-        name: 'PHP Experience 2019',
-        location: 'São Paulo/SP',
-        date: '05 e 06 de abril de 2019',
-        hours: 12,
-        urlCertificate:
-          'https://www.dropbox.com/s/lfjv7bpp2dav47o/phpExperience2019.pdf?dl=0'
-      },
-      brazilJSConf2017: {
-        name: 'BrazilJS Conf 2017',
-        location: 'Porto Alegre/RS',
-        date: '25 e 26 de Agosto de 2017',
-        hours: 16,
-        urlCertificate:
-          'https://www.dropbox.com/s/9jtnfgg6b9a5f57/brazilJSConf2017.pdf?dl=0'
-      }
-    }
+    courses,
+    events
   })
 }
 </script>

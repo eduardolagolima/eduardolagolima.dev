@@ -1,10 +1,20 @@
 # eduardolagolima.dev
 
-> Site pessoal
+> Meu site pessoal :)
 
-## Build Setup
+## Tecnologias usadas
+
+* Vue.js
+* Nuxt.js
+* Buefy
+* Netlify
+
+## Como testar
 
 ```bash
+# clone repository
+$ git clone https://github.com/eduardolagolima/eduardolagolima.dev.git
+
 # install dependencies
 $ yarn install
 
@@ -18,5 +28,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

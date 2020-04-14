@@ -4,7 +4,7 @@
     "description": "Este site que você está usando :)",
     "urlGithub": "https://github.com/eduardolagolima/eduardolagolima.dev",
     "urlProduction": "https://eduardolagolima.dev/",
-    "techs": ["Vue.js", "Nuxt.js", "Buefy"]
+    "techs": ["Vue.js", "Nuxt.js", "Buefy", "Netlify"]
   },
   "gymWorkout": {
     "name": "gym-workout",

@@ -31,96 +31,95 @@ export default {
         {
           name: 'PHP',
           value: 90,
-          type: 'is-primary'
+          colorType: 'is-primary'
         },
         {
           name: 'Laravel',
           value: 70,
-          type: 'is-danger'
+          colorType: 'is-danger'
         },
         {
           name: 'Node.js',
           value: 60,
-          type: 'is-success'
+          colorType: 'is-success'
         },
         {
           name: 'Express.js',
           value: 60,
-          type: 'is-darkgrey'
+          colorType: 'is-darkgrey'
         }
       ],
       database: [
         {
           name: 'PostgreSQL',
           value: 90,
-          type: 'is-info'
+          colorType: 'is-info'
         },
         {
           name: 'MongoDB',
           value: 60,
-          type: 'is-success'
+          colorType: 'is-success'
         }
       ],
       devops: [
         {
           name: 'Docker',
           value: 70,
-          type: 'is-info'
+          colorType: 'is-info'
         },
         {
           name: 'Shell Script',
           value: 60,
-          type: 'is-darkgrey'
+          colorType: 'is-darkgrey'
         }
       ],
       frontend: [
         {
           name: 'Javascript',
           value: 90,
-          type: 'is-warning',
-          color: '#000'
+          colorType: 'is-warning'
         },
         {
           name: 'Vue.js',
           value: 80,
-          type: 'is-success'
+          colorType: 'is-success'
         },
         {
           name: 'React.js',
           value: 60,
-          type: 'is-info'
+          colorType: 'is-info'
         },
         {
           name: 'HTML',
           value: 90,
-          type: 'is-danger'
+          colorType: 'is-danger'
         },
         {
           name: 'CSS',
           value: 80,
-          type: 'is-info'
+          colorType: 'is-info'
         }
       ],
       others: [
         {
           name: 'Linux',
           value: 80,
-          type: 'is-darkgrey'
+          colorType: 'is-darkgrey'
         },
         {
           name: 'Metodologia Kanban',
           value: 70,
-          type: 'is-danger'
+          colorType: 'is-danger'
         },
         {
           name: 'Git',
           value: 70,
-          type: 'is-darkgrey'
+          colorType: 'is-darkgrey'
         },
         {
           name: 'React Native',
           value: 30,
-          type: 'is-info'
+          colorType: 'is-info'
         }
       ]
     }

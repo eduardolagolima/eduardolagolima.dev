@@ -1,5 +1,5 @@
 <template>
-  <article class="tile is-child notification" :class="project.type">
+  <article class="tile is-child notification" :class="colorType">
     <p class="title">{{ project.name }}</p>
     <p class="subtitle">{{ project.description }}</p>
     <div class="content">
@@ -26,6 +26,10 @@
 <script>
 export default {
   props: {
+    colorType: {
+      type: String,
+      required: true
+    },
     project: {
       type: Object,
       required: true

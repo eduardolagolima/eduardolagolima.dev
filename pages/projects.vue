@@ -5,13 +5,22 @@
     </h3>
 
     <div class="tile is-ancestor">
-      <div class="tile is-vertical is-parent">
-        <TileProject :project="projects.personalWebSite" />
-        <TileProject :project="projects.gymWorkout" />
+      <div class="tile is-parent">
+        <TileProject
+          :project="projects.personalWebSite"
+          color-type="is-primary"
+        />
       </div>
-      <div class="tile is-vertical is-parent">
-        <TileProject :project="projects.devRadar" />
-        <TileProject :project="projects.beTheHero" />
+      <div class="tile is-parent">
+        <TileProject :project="projects.devRadar" color-type="is-success" />
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <TileProject :project="projects.gymWorkout" color-type="is-dark" />
+      </div>
+      <div class="tile is-parent">
+        <TileProject :project="projects.beTheHero" color-type="is-danger" />
       </div>
     </div>
   </section>
@@ -31,7 +40,6 @@ export default {
         description: 'Este site que você está usando :)',
         urlGithub: 'https://github.com/eduardolagolima/eduardolagolima.dev',
         urlProduction: 'https://eduardolagolima.dev/',
-        type: 'is-info',
         techs: ['Vue.js', 'Nuxt.js', 'Buefy']
       },
       gymWorkout: {
@@ -39,7 +47,6 @@ export default {
         description: 'Sistema para controlar treinos de musculação.',
         urlGithub: 'https://github.com/eduardolagolima/gym-workout',
         urlProduction: null,
-        type: 'is-success',
         techs: [
           'Express.js',
           'MongoDB',
@@ -60,7 +67,6 @@ export default {
           'Projeto desenvolvido durante a Semana OmniStack 10.0 da Rocketseat.',
         urlGithub: 'https://github.com/eduardolagolima/dev-radar',
         urlProduction: null,
-        type: 'is-primary',
         techs: [
           'Express.js',
           'MongoDB',
@@ -78,7 +84,6 @@ export default {
           'Projeto desenvolvido durante a Semana OmniStack 11.0 da Rocketseat.',
         urlGithub: 'https://github.com/eduardolagolima/be-the-hero',
         urlProduction: null,
-        type: 'is-danger',
         techs: [
           'Express.js',
           'SQLite',

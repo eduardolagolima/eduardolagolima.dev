@@ -10,7 +10,7 @@
       </figure>
     </div>
     <div class="column has-text-centered">
-      <p>Desenvolvedor na Atua Sistemas de Informação</p>
+      <p>Desenvolvedor na UOL EdTech</p>
       <p>Bacharelado, Sistemas de Informação, IMED</p>
       <p>Passo Fundo/RS</p>
     </div>

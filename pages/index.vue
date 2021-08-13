@@ -10,7 +10,7 @@
       </figure>
     </div>
     <div class="column has-text-centered">
-      <p>Desenvolvedor na UOL EdTech</p>
+      <p>Front End Developer na Vizir Software Studio</p>
       <p>Bacharelado, Sistemas de Informação, IMED</p>
       <p>Passo Fundo/RS</p>
     </div>

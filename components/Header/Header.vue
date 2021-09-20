@@ -40,8 +40,12 @@ export default {
         description: 'Projetos'
       },
       {
-        to: 'courses-events',
-        description: 'Cursos e Eventos'
+        to: 'courses',
+        description: 'Cursos'
+      },
+      {
+        to: 'events',
+        description: 'Eventos'
       }
     ]
   })

@@ -2,26 +2,9 @@
   <article class="tile is-child notification" :class="colorType">
     <p class="title">{{ event.name }}</p>
     <div class="content">
-      <ul>
-        <li>
-          <span>Local:</span>
-          <strong>{{ event.location }}</strong>
-        </li>
-        <li>
-          <span>Data:</span>
-          <strong>{{ event.date }}</strong>
-        </li>
-        <li>
-          <span>Carga horária:</span>
-          <strong>{{ event.hours }} horas</strong>
-        </li>
-        <li>
-          <span>Certificado:</span>
-          <a target="_blank" :href="event.urlCertificate"
-            ><strong>Link</strong></a
-          >
-        </li>
-      </ul>
+      <a target="_blank" :href="event.urlCertificate">
+        <strong>Certificado</strong>
+      </a>
     </div>
   </article>
 </template>

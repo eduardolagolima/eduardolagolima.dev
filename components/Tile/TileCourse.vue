@@ -1,6 +1,9 @@
 <template>
   <article class="tile is-child notification is-primary">
-    <p class="title">{{ course.name }}</p>
+    <p class="title custom-title">
+      <b-icon :icon="course.icon" size="is-medium" />
+      <span class="custom-title-span">{{ course.name }}</span>
+    </p>
     <div class="content">
       <b-button
         target="_blank"
@@ -28,4 +31,13 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.custom-title {
+  display: flex;
+  align-items: center;
+}
+
+.custom-title-span {
+  margin-left: 10px;
+}
+</style>

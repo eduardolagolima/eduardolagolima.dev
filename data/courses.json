@@ -1,13 +1,16 @@
 {
   "reactNative": {
+    "icon": "react",
     "name": "React Native: Desenvolva APPs Nativas para Android e iOS",
     "urlCertificate": "/files/certificates/courses/react-native.pdf"
   },
   "typescript": {
+    "icon": "language-typescript",
     "name": "Dominando TypeScript",
     "urlCertificate": "/files/certificates/courses/typescript.pdf"
   },
   "cssFlexbox": {
+    "icon": "language-css3",
     "name": "CSS Flexbox",
     "urlCertificate": "/files/certificates/courses/css-flexbox.pdf"
   }

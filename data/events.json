@@ -1,17 +1,21 @@
 {
   "semanaOmnistack11": {
+    "icon": "rocket",
     "name": "Semana OmniStack 11",
     "urlCertificate": "/files/certificates/events/semana-omnistack-11.pdf"
   },
   "pgConfBrazil2019": {
+    "icon": "database",
     "name": "PGConf 2019",
     "urlCertificate": "/files/certificates/events/pgconf-2019.pdf"
   },
   "phpExperience2019": {
+    "icon": "language-php",
     "name": "PHP Experience 2019",
     "urlCertificate": "/files/certificates/events/php-experience-2019.pdf"
   },
   "brazilJSConf2017": {
+    "icon": "language-javascript",
     "name": "BrazilJS 2017",
     "urlCertificate": "/files/certificates/events/braziljs-2017.pdf"
   }

@@ -13,7 +13,7 @@
 
       <template v-for="(experience, key) of experiences">
         <div :key="key" class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-marker" />
           <div class="timeline-content">
             <p class="heading">{{ experience.date }}</p>
             <p>{{ experience.event }}</p>

@@ -10,13 +10,15 @@
         </li>
         <li>
           <span>Projeto no github:</span>
-          <a target="_blank" :href="project.urlGithub"><strong>Link</strong></a>
+          <a target="_blank" :href="project.urlGithub">
+            <strong>Link</strong>
+          </a>
         </li>
         <li v-if="project.urlProduction">
           <span>Projeto em produção:</span>
-          <a target="_blank" :href="project.urlProduction"
-            ><strong>Link</strong></a
-          >
+          <a target="_blank" :href="project.urlProduction">
+            <strong>Link</strong>
+          </a>
         </li>
       </ul>
     </div>
@@ -33,5 +35,3 @@ export default {
   }
 }
 </script>
-
-<style></style>

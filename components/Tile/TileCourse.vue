@@ -2,9 +2,17 @@
   <article class="tile is-child notification is-primary">
     <p class="title">{{ course.name }}</p>
     <div class="content">
-      <a target="_blank" :href="course.urlCertificate">
-        <strong>Certificado</strong>
-      </a>
+      <b-button
+        target="_blank"
+        :href="course.urlCertificate"
+        tag="a"
+        type="is-primary"
+        inverted
+        outlined
+        icon-right="open-in-new"
+      >
+        Certificado
+      </b-button>
     </div>
   </article>
 </template>

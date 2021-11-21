@@ -6,16 +6,16 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <TileCourse :course="courses.reactNative" color-type="is-success" />
+        <TileCourse :course="courses.reactNative" />
       </div>
     </div>
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <TileCourse :course="courses.typescript" color-type="is-primary" />
+        <TileCourse :course="courses.typescript" />
       </div>
       <div class="tile is-parent">
-        <TileCourse :course="courses.cssFlexbox" color-type="is-info" />
+        <TileCourse :course="courses.cssFlexbox" />
       </div>
     </div>
   </section>

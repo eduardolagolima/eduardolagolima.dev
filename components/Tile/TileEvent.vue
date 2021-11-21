@@ -1,5 +1,5 @@
 <template>
-  <article class="tile is-child notification" :class="colorType">
+  <article class="tile is-child notification is-primary">
     <p class="title">{{ event.name }}</p>
     <div class="content">
       <a target="_blank" :href="event.urlCertificate">
@@ -12,10 +12,6 @@
 <script>
 export default {
   props: {
-    colorType: {
-      type: String,
-      required: true
-    },
     event: {
       type: Object,
       required: true

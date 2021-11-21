@@ -6,7 +6,7 @@
         v-for="(skill, key) of skills"
         :key="key"
         size="is-large"
-        :type="skill.colorType"
+        type="is-primary"
         :value="skill.value"
         show-value
       >

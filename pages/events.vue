@@ -6,19 +6,19 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <TileEvent :event="events.semanaOmnistack11" color-type="is-success" />
+        <TileEvent :event="events.semanaOmnistack11" />
       </div>
       <div class="tile is-parent">
-        <TileEvent :event="events.pgConfBrazil2019" color-type="is-info" />
+        <TileEvent :event="events.pgConfBrazil2019" />
       </div>
     </div>
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <TileEvent :event="events.phpExperience2019" color-type="is-primary" />
+        <TileEvent :event="events.phpExperience2019" />
       </div>
       <div class="tile is-parent">
-        <TileEvent :event="events.brazilJSConf2017" color-type="is-warning" />
+        <TileEvent :event="events.brazilJSConf2017" />
       </div>
     </div>
   </section>

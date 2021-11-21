@@ -6,21 +6,18 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <TileProject
-          :project="projects.personalWebSite"
-          color-type="is-primary"
-        />
+        <TileProject :project="projects.personalWebSite" />
       </div>
       <div class="tile is-parent">
-        <TileProject :project="projects.devRadar" color-type="is-success" />
+        <TileProject :project="projects.devRadar" />
       </div>
     </div>
     <div class="tile is-ancestor">
       <div class="tile is-parent">
-        <TileProject :project="projects.gymWorkout" color-type="is-dark" />
+        <TileProject :project="projects.gymWorkout" />
       </div>
       <div class="tile is-parent">
-        <TileProject :project="projects.beTheHero" color-type="is-danger" />
+        <TileProject :project="projects.beTheHero" />
       </div>
     </div>
   </section>

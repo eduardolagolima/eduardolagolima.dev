@@ -12,12 +12,6 @@
         />
       </div>
       <div class="tile is-parent">
-        <TileCourse
-          :course="courses.semanaOmnistack10"
-          color-type="is-success"
-        />
-      </div>
-      <div class="tile is-parent">
         <TileCourse :course="courses.cssFlexbox" color-type="is-info" />
       </div>
     </div>

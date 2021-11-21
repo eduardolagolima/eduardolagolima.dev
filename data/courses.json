@@ -6,11 +6,6 @@
     "hours": 10,
     "urlCertificate": "https://www.dropbox.com/s/d1nejvkeyvrxmqs/semanaOmnistack11.pdf?dl=0"
   },
-  "semanaOmnistack10": {
-    "name": "Semana OmniStack 10",
-    "date": "Janeiro de 2020",
-    "school": "Rocketseat"
-  },
   "cssFlexbox": {
     "name": "CSS Flexbox",
     "date": "Outubro de 2019",

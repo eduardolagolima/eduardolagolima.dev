@@ -5,7 +5,16 @@
     </h3>
 
     <div class="tile is-ancestor">
-      <div class="tile is-parent is-6">
+      <div class="tile is-parent">
+        <TileCourse :course="courses.reactNative" color-type="is-success" />
+      </div>
+    </div>
+
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <TileCourse :course="courses.typescript" color-type="is-primary" />
+      </div>
+      <div class="tile is-parent">
         <TileCourse :course="courses.cssFlexbox" color-type="is-info" />
       </div>
     </div>

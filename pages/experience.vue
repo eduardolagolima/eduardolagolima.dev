@@ -12,7 +12,7 @@
       </header>
 
       <template v-for="(experience, key) of experiences">
-        <div :key="key" class="timeline-item">
+        <div :key="`timeline-item-${key}`" class="timeline-item">
           <div class="timeline-marker" />
           <div class="timeline-content">
             <p class="heading">{{ experience.date }}</p>
@@ -25,7 +25,7 @@
             typeof experiences[key + 1] !== 'undefined' &&
               experiences[key + 1]['year'] !== experience.year
           "
-          :key="key"
+          :key="`timeline-header-${key}`"
           class="timeline-header"
         >
           <span class="tag is-primary">{{ experience.year }}</span>

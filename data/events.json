@@ -1,18 +1,18 @@
 {
   "semanaOmnistack11": {
     "name": "Semana OmniStack 11",
-    "urlCertificate": "https://www.dropbox.com/s/d1nejvkeyvrxmqs/semanaOmnistack11.pdf?dl=0"
+    "urlCertificate": "/files/certificates/events/semana-omnistack-11.pdf"
   },
   "pgConfBrazil2019": {
-    "name": "PGConf Brasil 2019",
-    "urlCertificate": "https://www.dropbox.com/s/7qidwgu8whmfwkc/pgConfBrazil2019.pdf?dl=0"
+    "name": "PGConf 2019",
+    "urlCertificate": "/files/certificates/events/pgconf-2019.pdf"
   },
   "phpExperience2019": {
     "name": "PHP Experience 2019",
-    "urlCertificate": "https://www.dropbox.com/s/lfjv7bpp2dav47o/phpExperience2019.pdf?dl=0"
+    "urlCertificate": "/files/certificates/events/php-experience-2019.pdf"
   },
   "brazilJSConf2017": {
-    "name": "BrazilJS Conf 2017",
-    "urlCertificate": "https://www.dropbox.com/s/9jtnfgg6b9a5f57/brazilJSConf2017.pdf?dl=0"
+    "name": "BrazilJS 2017",
+    "urlCertificate": "/files/certificates/events/braziljs-2017.pdf"
   }
 }

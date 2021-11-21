@@ -6,8 +6,14 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-parent">
+        <TileEvent :event="events.semanaOmnistack11" color-type="is-success" />
+      </div>
+      <div class="tile is-parent">
         <TileEvent :event="events.pgConfBrazil2019" color-type="is-info" />
       </div>
+    </div>
+
+    <div class="tile is-ancestor">
       <div class="tile is-parent">
         <TileEvent :event="events.phpExperience2019" color-type="is-primary" />
       </div>

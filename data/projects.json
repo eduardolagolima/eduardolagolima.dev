@@ -12,19 +12,5 @@
     "subtitle": "Sistema para controlar treinos de musculação.",
     "repositoryUrl": "https://github.com/eduardolagolima/gym-workout",
     "techs": ["Node.js", "MongoDB", "Vue.js", "Vuetify"]
-  },
-  {
-    "icon": "radar",
-    "title": "dev-radar",
-    "subtitle": "Projeto desenvolvido durante a Semana OmniStack 10.0 da Rocketseat.",
-    "repositoryUrl": "https://github.com/eduardolagolima/dev-radar",
-    "techs": ["Node.js", "MongoDB", "Socket.io", "React.js", "React Native"]
-  },
-  {
-    "icon": "rocket",
-    "title": "be-the-hero",
-    "subtitle": "Projeto desenvolvido durante a Semana OmniStack 11.0 da Rocketseat.",
-    "repositoryUrl": "https://github.com/eduardolagolima/be-the-hero",
-    "techs": ["Node.js", "SQLite", "React.js", "React Native", "Jest"]
   }
 ]

@@ -4,31 +4,18 @@
       Cursos
     </h3>
 
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <TileCourse :course="courses.reactNative" />
-      </div>
-    </div>
-
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <TileCourse :course="courses.typescript" />
-      </div>
-      <div class="tile is-parent">
-        <TileCourse :course="courses.cssFlexbox" />
-      </div>
-    </div>
+    <Tiles :items="courses" />
   </section>
 </template>
 
 <script>
-import TileCourse from '~/components/Tile/TileCourse'
+import Tiles from '~/components/Tile/Tiles'
 
 import courses from '~/data/courses.json'
 
 export default {
   components: {
-    TileCourse
+    Tiles
   },
   data: () => ({
     courses

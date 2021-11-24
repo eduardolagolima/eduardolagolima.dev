@@ -4,33 +4,18 @@
       Projetos
     </h3>
 
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <TileProject :project="projects.personalWebSite" />
-      </div>
-      <div class="tile is-parent">
-        <TileProject :project="projects.devRadar" />
-      </div>
-    </div>
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <TileProject :project="projects.gymWorkout" />
-      </div>
-      <div class="tile is-parent">
-        <TileProject :project="projects.beTheHero" />
-      </div>
-    </div>
+    <Tiles :items="projects" />
   </section>
 </template>
 
 <script>
-import TileProject from '~/components/Tile/TileProject'
+import Tiles from '~/components/Tile/Tiles'
 
 import projects from '~/data/projects.json'
 
 export default {
   components: {
-    TileProject
+    Tiles
   },
   data: () => ({
     projects

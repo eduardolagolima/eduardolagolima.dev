@@ -2,11 +2,13 @@
   {
     "icon": "rocket",
     "title": "Semana OmniStack 11",
-    "certificateUrl": "/files/certificates/events/semana-omnistack-11.pdf"
+    "certificateUrl": "/files/certificates/events/semana-omnistack-11.pdf",
+    "repositoryUrl": "https://github.com/eduardolagolima/be-the-hero"
   },
   {
     "icon": "rocket",
-    "title": "Semana OmniStack 10"
+    "title": "Semana OmniStack 10",
+    "repositoryUrl": "https://github.com/eduardolagolima/dev-radar"
   },
   {
     "icon": "database",

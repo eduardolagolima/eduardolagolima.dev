@@ -7,7 +7,7 @@
     <div class="content">
       <b-button
         target="_blank"
-        :href="event.urlCertificate"
+        :href="event.certificateUrl"
         tag="a"
         type="is-primary"
         inverted

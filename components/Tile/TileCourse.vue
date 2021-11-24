@@ -7,7 +7,7 @@
     <div class="content">
       <b-button
         target="_blank"
-        :href="course.urlCertificate"
+        :href="course.certificateUrl"
         tag="a"
         type="is-primary"
         inverted

@@ -12,12 +12,14 @@
         <span>Tecnologias:</span>
         <strong>{{ item.techs.join(', ') }}</strong>
       </p>
-      <Button
-        icon="open-in-new"
-        label="Certificado"
-        :url="item.certificateUrl"
-      />
-      <Button icon="github" label="Repositório" :url="item.repositoryUrl" />
+      <div class="buttons">
+        <Button
+          icon="open-in-new"
+          label="Certificado"
+          :url="item.certificateUrl"
+        />
+        <Button icon="github" label="Repositório" :url="item.repositoryUrl" />
+      </div>
     </div>
   </article>
 </template>

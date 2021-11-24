@@ -5,6 +5,10 @@
     "certificateUrl": "/files/certificates/events/semana-omnistack-11.pdf"
   },
   {
+    "icon": "rocket",
+    "title": "Semana OmniStack 10"
+  },
+  {
     "icon": "database",
     "title": "PGConf 2019",
     "certificateUrl": "/files/certificates/events/pgconf-2019.pdf"

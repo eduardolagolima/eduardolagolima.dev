@@ -5,12 +5,5 @@
     "subtitle": "Este site que você está usando :)",
     "repositoryUrl": "https://github.com/eduardolagolima/eduardolagolima.dev",
     "techs": ["Vue.js", "Nuxt.js", "Buefy", "Netlify"]
-  },
-  {
-    "icon": "arm-flex-outline",
-    "title": "gym-workout",
-    "subtitle": "Sistema para controlar treinos de musculação.",
-    "repositoryUrl": "https://github.com/eduardolagolima/gym-workout",
-    "techs": ["Node.js", "MongoDB", "Vue.js", "Vuetify"]
   }
 ]

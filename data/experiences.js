@@ -6,7 +6,8 @@ const experiences = [
   {
     date: date('2021-08'),
     role: 'Software Developer',
-    company: 'Vizir Software Studio'
+    company: 'Vizir Software Studio',
+    currentJob: true
   },
   {
     date: date('2020-09'),
@@ -16,7 +17,8 @@ const experiences = [
   {
     date: date('2019-07'),
     role: 'Bacharelado, Sistemas de Informação',
-    company: 'IMED'
+    company: 'IMED',
+    graduation: true
   },
   {
     date: date('2017-06'),

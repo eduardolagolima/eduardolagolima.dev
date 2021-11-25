@@ -10,8 +10,8 @@
       </figure>
     </div>
     <div class="column has-text-centered">
-      <p>Software Developer na Vizir Software Studio</p>
-      <p>Bacharelado, Sistemas de Informação, IMED</p>
+      <p>{{ currentJob }}</p>
+      <p>{{ graduation }}</p>
       <p>Passo Fundo/RS</p>
     </div>
     <div class="is-flex content-centered">
@@ -25,13 +25,24 @@
 </template>
 
 <script>
+import { experiences } from '~/data/experiences'
 import { contacts } from '~/data/contacts'
 
 export default {
   layout: 'about',
   data: () => ({
     contacts
-  })
+  }),
+  computed: {
+    currentJob() {
+      const { role, company } = experiences.find(({ currentJob }) => currentJob)
+      return `${role} - ${company}`
+    },
+    graduation() {
+      const { role, company } = experiences.find(({ graduation }) => graduation)
+      return `${role} - ${company}`
+    }
+  }
 }
 </script>
 

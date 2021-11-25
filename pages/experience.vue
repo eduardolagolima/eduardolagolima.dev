@@ -6,45 +6,48 @@
 
     <div class="timeline is-centered">
       <header class="timeline-header">
-        <span class="tag is-medium is-primary">{{
-          new Date().getFullYear()
-        }}</span>
+        <span class="tag is-medium is-primary">{{ currentYear }}</span>
       </header>
 
-      <template v-for="(experience, key) of experiences">
-        <div :key="`timeline-item-${key}`" class="timeline-item">
-          <div class="timeline-marker" />
-          <div class="timeline-content">
-            <p class="heading">{{ experience.date }}</p>
-            <p>{{ experience.event }}</p>
-            <p class="company">{{ experience.company }}</p>
-          </div>
+      <div
+        v-for="(experience, key) of experiences"
+        :key="key"
+        class="timeline-item"
+      >
+        <div class="timeline-marker" />
+        <div class="timeline-content">
+          <p class="heading">{{ experience.date | formatDate }}</p>
+          <p>{{ experience.role }}</p>
+          <p class="company">{{ experience.company }}</p>
         </div>
-        <header
-          v-if="
-            typeof experiences[key + 1] !== 'undefined' &&
-              experiences[key + 1]['year'] !== experience.year
-          "
-          :key="`timeline-header-${key}`"
-          class="timeline-header"
-        >
-          <span class="tag is-primary">{{ experience.year }}</span>
-        </header>
-      </template>
+      </div>
 
       <div class="timeline-header">
-        <span class="tag is-medium is-primary">2016</span>
+        <span class="tag is-medium is-primary">{{ initialYear }}</span>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import experiences from '~/data/experiences.json'
+import dayjs from 'dayjs'
+
+import experiences from '~/data/experiences'
+
+const years = experiences.map(({ date }) => date.year())
+const initialYear = Math.min(...years)
+const currentYear = dayjs().year()
 
 export default {
+  filters: {
+    formatDate(date) {
+      return date.format('MMMM [de] YYYY')
+    }
+  },
   data: () => ({
-    experiences
+    experiences,
+    initialYear,
+    currentYear
   })
 }
 </script>

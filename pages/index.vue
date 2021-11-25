@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import contacts from '~/data/contacts.json'
+import { contacts } from '~/data/contacts'
 
 export default {
   layout: 'about',

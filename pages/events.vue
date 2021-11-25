@@ -11,7 +11,7 @@
 <script>
 import Tiles from '~/components/Tile/Tiles'
 
-import events from '~/data/events.json'
+import { events } from '~/data/events'
 
 export default {
   components: {

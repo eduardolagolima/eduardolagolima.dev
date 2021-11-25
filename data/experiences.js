@@ -30,4 +30,4 @@ const experiences = [
   }
 ]
 
-export default experiences
+export { experiences }

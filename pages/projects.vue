@@ -11,7 +11,7 @@
 <script>
 import Tiles from '~/components/Tile/Tiles'
 
-import projects from '~/data/projects.json'
+import { projects } from '~/data/projects'
 
 export default {
   components: {

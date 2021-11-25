@@ -11,7 +11,7 @@
 <script>
 import Tiles from '~/components/Tile/Tiles'
 
-import courses from '~/data/courses.json'
+import { courses } from '~/data/courses'
 
 export default {
   components: {

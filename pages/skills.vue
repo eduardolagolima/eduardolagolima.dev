@@ -21,7 +21,7 @@
 <script>
 import TileSkills from '~/components/Tile/TileSkills'
 
-import skills from '~/data/skills.json'
+import { skills } from '~/data/skills'
 
 export default {
   components: {

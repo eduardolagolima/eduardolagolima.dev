@@ -32,7 +32,7 @@
 <script>
 import dayjs from 'dayjs'
 
-import experiences from '~/data/experiences'
+import { experiences } from '~/data/experiences'
 
 const years = experiences.map(({ date }) => date.year())
 const initialYear = Math.min(...years)

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "bulma-timeline": "^3.0.4",
+    "dayjs": "^1.10.7",
     "lodash": "^4.17.21",
     "nuxt": "^2.0.0",
     "nuxt-buefy": "^0.3.2"

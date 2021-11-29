@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import _ from 'lodash'
+import chunk from 'lodash/chunk'
 
 import Tile from './Tile'
 
@@ -38,7 +38,7 @@ export default {
   }),
   computed: {
     chunkedItems() {
-      return _.chunk(this.items, this.itemsPerRow)
+      return chunk(this.items, this.itemsPerRow)
     }
   }
 }

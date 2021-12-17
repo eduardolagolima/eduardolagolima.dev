@@ -31,7 +31,7 @@ import { contacts } from '~/data/contacts'
 export default {
   layout: 'about',
   data: () => ({
-    contacts
+    contacts,
   }),
   computed: {
     currentJob() {
@@ -41,8 +41,8 @@ export default {
     graduation() {
       const { role, company } = experiences.find(({ graduation }) => graduation)
       return `${role} - ${company}`
-    }
-  }
+    },
+  },
 }
 </script>
 

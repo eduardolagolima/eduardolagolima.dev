@@ -4,10 +4,10 @@
 
 ## Tecnologias usadas
 
-* Vue.js
-* Nuxt.js
-* Buefy
-* Netlify
+- Vue.js
+- Nuxt.js
+- Buefy
+- Netlify
 
 ## Como testar
 

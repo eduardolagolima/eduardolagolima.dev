@@ -1,8 +1,6 @@
 <template>
   <section class="section">
-    <h3 class="title is-3 has-text-grey">
-      Cursos
-    </h3>
+    <h3 class="title is-3 has-text-grey">Cursos</h3>
 
     <Tiles :items="courses" />
   </section>
@@ -15,10 +13,10 @@ import { courses } from '~/data/courses'
 
 export default {
   components: {
-    Tiles
+    Tiles,
   },
   data: () => ({
-    courses
-  })
+    courses,
+  }),
 }
 </script>

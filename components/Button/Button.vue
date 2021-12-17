@@ -18,16 +18,16 @@ export default {
   props: {
     icon: {
       type: String,
-      default: null
+      default: null,
     },
     label: {
       type: String,
-      required: true
+      required: true,
     },
     url: {
       type: String,
-      default: null
-    }
-  }
+      default: null,
+    },
+  },
 }
 </script>

@@ -14,10 +14,12 @@
   padding: 1rem 3rem;
   background-color: #7957d5;
 }
+
 .custom-footer p {
   font-size: 0.75rem;
   color: #fff;
 }
+
 .custom-footer p a {
   color: #fff;
 }

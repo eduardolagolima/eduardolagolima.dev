@@ -29,14 +29,14 @@ import Button from '../Button/Button.vue'
 
 export default {
   components: {
-    Button
+    Button,
   },
   props: {
     item: {
       type: Object,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>
 

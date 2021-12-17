@@ -19,35 +19,35 @@ import HeaderItem from '~/components/Header/HeaderItem'
 
 export default {
   components: {
-    HeaderItem
+    HeaderItem,
   },
   data: () => ({
     headerItems: [
       {
         to: 'index',
-        description: 'Sobre'
+        description: 'Sobre',
       },
       {
         to: 'skills',
-        description: 'Habilidades'
+        description: 'Habilidades',
       },
       {
         to: 'experience',
-        description: 'Experiência'
+        description: 'Experiência',
       },
       {
         to: 'projects',
-        description: 'Projetos'
+        description: 'Projetos',
       },
       {
         to: 'courses',
-        description: 'Cursos'
+        description: 'Cursos',
       },
       {
         to: 'events',
-        description: 'Eventos'
-      }
-    ]
-  })
+        description: 'Eventos',
+      },
+    ],
+  }),
 }
 </script>

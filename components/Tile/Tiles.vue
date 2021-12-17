@@ -24,22 +24,22 @@ import Tile from './Tile'
 
 export default {
   components: {
-    Tile
+    Tile,
   },
   props: {
     items: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   data: () => ({
     columns: 12,
-    itemsPerRow: 2
+    itemsPerRow: 2,
   }),
   computed: {
     chunkedItems() {
       return chunk(this.items, this.itemsPerRow)
-    }
-  }
+    },
+  },
 }
 </script>

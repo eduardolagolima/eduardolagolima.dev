@@ -1,8 +1,6 @@
 <template>
   <section class="section">
-    <h3 class="title is-3 has-text-grey">
-      Experiência
-    </h3>
+    <h3 class="title is-3 has-text-grey">Experiência</h3>
 
     <div class="timeline is-centered">
       <header class="timeline-header">
@@ -42,13 +40,13 @@ export default {
   filters: {
     formatDate(date) {
       return date.format('MMMM [de] YYYY')
-    }
+    },
   },
   data: () => ({
     experiences,
     initialYear,
-    currentYear
-  })
+    currentYear,
+  }),
 }
 </script>
 

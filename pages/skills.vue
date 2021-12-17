@@ -6,12 +6,11 @@
 
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-parent">
+        <TileSkills title="Frontend" :skills="skills.frontend" />
         <TileSkills title="Backend" :skills="skills.backend" />
-        <TileSkills title="Database" :skills="skills.database" />
-        <TileSkills title="Devops" :skills="skills.devops" />
       </div>
       <div class="tile is-vertical is-parent">
-        <TileSkills title="Frontend" :skills="skills.frontend" />
+        <TileSkills title="Database" :skills="skills.database" />
         <TileSkills title="Outras" :skills="skills.others" />
       </div>
     </div>

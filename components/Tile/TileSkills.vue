@@ -2,16 +2,16 @@
   <article class="tile is-child notification">
     <p class="title">{{ title }}</p>
     <div class="content">
-      <b-progress
-        v-for="(skill, key) of skills"
-        :key="key"
-        size="is-large"
-        type="is-primary"
-        :value="skill.value"
-        show-value
-      >
-        {{ skill.name }}
-      </b-progress>
+      <b-taglist>
+        <b-tag
+          v-for="(skill, key) of skills"
+          :key="key"
+          type="is-primary"
+          size="is-medium"
+        >
+          {{ skill }}
+        </b-tag>
+      </b-taglist>
     </div>
   </article>
 </template>

@@ -2,18 +2,18 @@
   <section class="section">
     <h3 class="title is-3 has-text-grey">Eventos</h3>
 
-    <Tiles :items="events" />
+    <TileWrapper :items="events" />
   </section>
 </template>
 
 <script>
-import Tiles from '~/components/Tile/Tiles'
+import TileWrapper from '~/components/Tile/TileWrapper'
 
 import { events } from '~/data/events'
 
 export default {
   components: {
-    Tiles,
+    TileWrapper,
   },
   data: () => ({
     events,

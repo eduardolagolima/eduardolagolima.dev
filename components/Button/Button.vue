@@ -1,6 +1,5 @@
 <template>
   <b-button
-    v-if="url"
     target="_blank"
     :href="url"
     tag="a"

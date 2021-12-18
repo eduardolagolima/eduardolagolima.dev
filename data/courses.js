@@ -1,23 +1,29 @@
+import { getCertificateUrl, getRepositoryUrl } from './utils/getActionsUrl'
+
 const courses = [
   {
     icon: 'react',
     title: 'React Native',
-    certificateUrl: '/files/certificates/courses/react-native.pdf',
-    repositoryUrl:
-      'https://github.com/eduardolagolima/curso-cod3r-react-native',
+    actions: [
+      getCertificateUrl('courses', 'react-native.pdf'),
+      getRepositoryUrl('curso-cod3r-react-native'),
+    ],
   },
   {
     icon: 'language-typescript',
     title: 'TypeScript',
-    certificateUrl: '/files/certificates/courses/typescript.pdf',
-    repositoryUrl: 'https://github.com/eduardolagolima/curso-hcode-typescript',
+    actions: [
+      getCertificateUrl('courses', 'typescript.pdf'),
+      getRepositoryUrl('curso-hcode-typescript'),
+    ],
   },
   {
     icon: 'language-css3',
     title: 'CSS Flexbox',
-    certificateUrl: '/files/certificates/courses/css-flexbox.pdf',
-    repositoryUrl:
-      'https://github.com/eduardolagolima/curso-origamid-cssflexbox',
+    actions: [
+      getCertificateUrl('courses', 'css-flexbox.pdf'),
+      getRepositoryUrl('curso-origamid-cssflexbox'),
+    ],
   },
 ]
 

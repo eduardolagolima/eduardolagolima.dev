@@ -1,10 +1,12 @@
+import { getRepositoryUrl } from './utils/getActionsUrl'
+
 const projects = [
   {
     icon: 'account',
     title: 'eduardolagolima.dev',
     subtitle: 'Este site que você está usando :)',
-    repositoryUrl: 'https://github.com/eduardolagolima/eduardolagolima.dev',
-    techs: ['Vue.js', 'Nuxt.js', 'Buefy', 'Netlify'],
+    tags: ['Vue.js', 'Nuxt.js', 'Buefy', 'Netlify'],
+    actions: [getRepositoryUrl('eduardolagolima.dev')],
   },
 ]
 

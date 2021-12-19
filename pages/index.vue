@@ -29,6 +29,7 @@ import { experiences } from '~/data/experiences'
 import { contacts } from '~/data/contacts'
 
 export default {
+  name: 'AboutPage',
   layout: 'about',
   data: () => ({
     contacts,

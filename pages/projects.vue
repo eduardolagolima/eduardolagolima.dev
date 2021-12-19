@@ -12,6 +12,7 @@ import TileWrapper from '~/components/Tile/TileWrapper'
 import { projects } from '~/data/projects'
 
 export default {
+  name: 'ProjectsPage',
   components: {
     TileWrapper,
   },

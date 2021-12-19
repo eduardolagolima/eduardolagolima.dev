@@ -12,6 +12,7 @@ import TileWrapper from '~/components/Tile/TileWrapper'
 import { courses } from '~/data/courses'
 
 export default {
+  name: 'CoursesPage',
   components: {
     TileWrapper,
   },

@@ -8,18 +8,18 @@
 
     <template slot="end">
       <template v-for="({ to, description }, key) of headerItems">
-        <HeaderItem :key="key" :to="to" :description="description" />
+        <MainHeaderItem :key="key" :to="to" :description="description" />
       </template>
     </template>
   </b-navbar>
 </template>
 
 <script>
-import HeaderItem from '~/components/Header/HeaderItem'
+import MainHeaderItem from '~/components/Header/MainHeaderItem'
 
 export default {
   components: {
-    HeaderItem,
+    MainHeaderItem,
   },
   data: () => ({
     headerItems: [

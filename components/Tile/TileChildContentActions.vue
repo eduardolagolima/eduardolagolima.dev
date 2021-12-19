@@ -1,6 +1,6 @@
 <template>
   <div class="buttons">
-    <Button
+    <ActionButton
       v-for="(action, key) of actions"
       :key="key"
       :icon="action.icon"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Button from '../Button/Button'
+import ActionButton from '../Button/ActionButton'
 
 export default {
   components: {
-    Button,
+    ActionButton,
   },
   props: {
     actions: {

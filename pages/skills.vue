@@ -12,6 +12,7 @@ import TileWrapper from '~/components/Tile/TileWrapper'
 import { skills } from '~/data/skills'
 
 export default {
+  name: 'SkillsPage',
   components: {
     TileWrapper,
   },

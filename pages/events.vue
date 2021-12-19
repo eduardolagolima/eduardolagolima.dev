@@ -12,6 +12,7 @@ import TileWrapper from '~/components/Tile/TileWrapper'
 import { events } from '~/data/events'
 
 export default {
+  name: 'EventsPage',
   components: {
     TileWrapper,
   },

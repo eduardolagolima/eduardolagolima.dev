@@ -37,6 +37,7 @@ const initialYear = Math.min(...years)
 const currentYear = dayjs().year()
 
 export default {
+  name: 'ExperiencePage',
   filters: {
     formatDate(date) {
       return date.format('MMMM [de] YYYY')

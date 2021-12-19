@@ -1,23 +1,24 @@
 <template>
   <div class="app">
-    <Header />
+    <MainHeader />
 
     <div class="main-content columns is-centered is-vcentered is-mobile">
       <nuxt />
     </div>
 
-    <Footer />
+    <MainFooter />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header/Header'
-import Footer from '~/components/Footer/Footer'
+import MainHeader from '~/components/Header/MainHeader'
+import MainFooter from '~/components/Footer/MainFooter'
 
 export default {
+  name: 'AboutLayout',
   components: {
-    Footer,
-    Header,
+    MainHeader,
+    MainFooter,
   },
 }
 </script>

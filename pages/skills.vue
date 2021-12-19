@@ -2,27 +2,18 @@
   <section class="section">
     <h3 class="title is-3 has-text-grey">Habilidades</h3>
 
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-parent">
-        <TileSkills title="Frontend" :skills="skills.frontend" />
-        <TileSkills title="Backend" :skills="skills.backend" />
-      </div>
-      <div class="tile is-vertical is-parent">
-        <TileSkills title="Database" :skills="skills.database" />
-        <TileSkills title="Outras" :skills="skills.others" />
-      </div>
-    </div>
+    <TileWrapper :items="skills" />
   </section>
 </template>
 
 <script>
-import TileSkills from '~/components/Tile/TileSkills'
+import TileWrapper from '~/components/Tile/TileWrapper'
 
 import { skills } from '~/data/skills'
 
 export default {
   components: {
-    TileSkills,
+    TileWrapper,
   },
   data: () => ({
     skills,

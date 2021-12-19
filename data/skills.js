@@ -1,8 +1,20 @@
-const skills = {
-  frontend: ['Javascript', 'Vue.js', 'React.js', 'React Native'],
-  backend: ['PHP', 'Laravel', 'Node.js', 'Express.js'],
-  database: ['PostgreSQL', 'MySQL', 'MongoDB'],
-  others: ['Linux', 'Docker', 'Shell Script', 'Kanban', 'Scrum'],
-}
+const skills = [
+  {
+    title: 'Frontend',
+    tags: ['Javascript', 'Vue.js', 'React.js', 'React Native'],
+  },
+  {
+    title: 'Backend',
+    tags: ['PHP', 'Laravel', 'Node.js', 'Express.js'],
+  },
+  {
+    title: 'Database',
+    tags: ['PostgreSQL', 'MySQL', 'MongoDB'],
+  },
+  {
+    title: 'Outras',
+    tags: ['Linux', 'Docker', 'Shell Script', 'Kanban', 'Scrum'],
+  },
+]
 
 export { skills }

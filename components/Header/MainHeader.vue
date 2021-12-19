@@ -17,37 +17,14 @@
 <script>
 import MainHeaderItem from '~/components/Header/MainHeaderItem'
 
+import { headerItems } from '~/data/headerItems'
+
 export default {
   components: {
     MainHeaderItem,
   },
   data: () => ({
-    headerItems: [
-      {
-        to: 'index',
-        description: 'Sobre',
-      },
-      {
-        to: 'skills',
-        description: 'Habilidades',
-      },
-      {
-        to: 'experience',
-        description: 'Experiência',
-      },
-      {
-        to: 'projects',
-        description: 'Projetos',
-      },
-      {
-        to: 'courses',
-        description: 'Cursos',
-      },
-      {
-        to: 'events',
-        description: 'Eventos',
-      },
-    ],
+    headerItems,
   }),
 }
 </script>

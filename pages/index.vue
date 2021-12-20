@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="is-flex content-centered">
+    <div class="is-flex is-justify-content-center">
       <figure class="image is-128x128">
         <img
           class="is-rounded"
@@ -14,7 +14,7 @@
       <p>{{ graduation | formatExperience }}</p>
       <p>Passo Fundo/RS</p>
     </div>
-    <div class="is-flex content-centered">
+    <div class="is-flex is-justify-content-center">
       <template v-for="({ url, icon }, key) of contacts">
         <a :key="key" target="_blank" :href="url">
           <b-icon :icon="icon" size="is-large" type="is-primary" />
@@ -52,9 +52,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style scoped>
-.content-centered {
-  justify-content: center;
-}
-</style>

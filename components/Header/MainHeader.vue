@@ -14,17 +14,19 @@
   </b-navbar>
 </template>
 
-<script>
-import MainHeaderItem from '~/components/Header/MainHeaderItem'
+<script lang="ts">
+import Vue from 'vue'
+
+import MainHeaderItem from '~/components/Header/MainHeaderItem.vue'
 
 import { headerItems } from '~/data/headerItems'
 
-export default {
+export default Vue.extend({
   components: {
     MainHeaderItem,
   },
   data: () => ({
     headerItems,
   }),
-}
+})
 </script>

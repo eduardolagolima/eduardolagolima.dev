@@ -1,4 +1,6 @@
-const contacts = [
+import { Contact } from '~/types/contact'
+
+const contacts: Contact[] = [
   {
     url: 'https://github.com/eduardolagolima',
     icon: 'github',

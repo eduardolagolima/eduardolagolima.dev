@@ -27,8 +27,10 @@
   </section>
 </template>
 
-<script>
-import dayjs from 'dayjs'
+<script lang="ts">
+import Vue from 'vue'
+
+import dayjs, { Dayjs } from 'dayjs'
 
 import { experiences } from '~/data/experiences'
 
@@ -36,10 +38,10 @@ const years = experiences.map(({ date }) => date.year())
 const initialYear = Math.min(...years)
 const currentYear = dayjs().year()
 
-export default {
+export default Vue.extend({
   name: 'ExperiencePage',
   filters: {
-    formatDate(date) {
+    formatDate(date: Dayjs) {
       return date.format('MMMM [de] YYYY')
     },
   },
@@ -48,7 +50,7 @@ export default {
     initialYear,
     currentYear,
   }),
-}
+})
 </script>
 
 <style scoped>

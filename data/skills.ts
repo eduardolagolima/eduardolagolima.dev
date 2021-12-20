@@ -1,4 +1,6 @@
-const skills = [
+import { Item } from '~/types/item'
+
+const skills: Item[] = [
   {
     title: 'Frontend',
     tags: ['Javascript', 'Vue.js', 'React.js', 'React Native'],

@@ -1,14 +1,15 @@
-import { getCertificateUrl, getRepositoryUrl } from './utils/getActionsUrl'
+import { getCertificate, getRepository } from '~/utils/getActions'
+import { Item } from '~/types/item'
 
-const courses = [
+const courses: Item[] = [
   {
     icon: 'react',
     title: 'React Native',
     subtitle:
       'React Native: Desenvolva APPs Nativas para Android e iOS - Cod3r',
     actions: [
-      getCertificateUrl('courses', 'react-native.pdf'),
-      getRepositoryUrl('curso-cod3r-react-native'),
+      getCertificate('courses', 'react-native.pdf'),
+      getRepository('curso-cod3r-react-native'),
     ],
   },
   {
@@ -16,8 +17,8 @@ const courses = [
     title: 'TypeScript',
     subtitle: 'Dominando TypeScript - Hcode',
     actions: [
-      getCertificateUrl('courses', 'typescript.pdf'),
-      getRepositoryUrl('curso-hcode-typescript'),
+      getCertificate('courses', 'typescript.pdf'),
+      getRepository('curso-hcode-typescript'),
     ],
   },
   {
@@ -25,8 +26,8 @@ const courses = [
     title: 'CSS Flexbox',
     subtitle: 'CSS Flexbox - Origamid',
     actions: [
-      getCertificateUrl('courses', 'css-flexbox.pdf'),
-      getRepositoryUrl('curso-origamid-cssflexbox'),
+      getCertificate('courses', 'css-flexbox.pdf'),
+      getRepository('curso-origamid-cssflexbox'),
     ],
   },
 ]

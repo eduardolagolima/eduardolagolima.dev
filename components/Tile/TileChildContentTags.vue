@@ -11,13 +11,15 @@
   </b-taglist>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
   props: {
     tags: {
       type: Array,
       required: true,
     },
   },
-}
+})
 </script>

@@ -10,13 +10,17 @@
   </Fragment>
 </template>
 
-<script>
+<script lang="ts">
+import Vue, { PropOptions } from 'vue'
+
 import { Fragment } from 'vue-fragment'
 import chunk from 'lodash/chunk'
 
-import TileAncestor from './TileAncestor'
+import TileAncestor from '~/components/Tile/TileAncestor.vue'
 
-export default {
+import { Item } from '~/types/item'
+
+export default Vue.extend({
   components: {
     Fragment,
     TileAncestor,
@@ -25,7 +29,7 @@ export default {
     items: {
       type: Array,
       required: true,
-    },
+    } as PropOptions<Item[]>,
     itemsPerRow: {
       type: Number,
       default: 2,
@@ -40,5 +44,5 @@ export default {
       return chunk(this.items, this.itemsPerRow)
     },
   },
-}
+})
 </script>

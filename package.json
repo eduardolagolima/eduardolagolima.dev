@@ -9,7 +9,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:style": "stylelint \"**/*.{css,scss,sass,html,vue}\" --ignore-path .gitignore",
     "lint:prettier": "prettier --check .",
     "lint": "yarn lint:js && yarn lint:style && yarn lint:prettier",
@@ -17,7 +17,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint --cache",
+    "*.{js,ts,vue}": "eslint --cache",
     "*.{css,scss,sass,html,vue}": "stylelint",
     "*.**": "prettier --check --ignore-unknown"
   },
@@ -36,7 +36,9 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.3",
-    "@nuxtjs/eslint-config": "^8.0.0",
+    "@nuxt/types": "^2.15.8",
+    "@nuxt/typescript-build": "^2.1.0",
+    "@nuxtjs/eslint-config-typescript": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/stylelint-module": "^4.1.0",
     "@types/lodash": "^4.14.178",

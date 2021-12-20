@@ -1,8 +1,10 @@
 import dayjs from 'dayjs'
 
-const date = (date, format = 'YYYY-MM') => dayjs.utc(date, format)
+import { Experience } from '~/types/experience'
 
-const experiences = [
+const date = (date: string) => dayjs.utc(date, 'YYYY-MM')
+
+const experiences: Experience[] = [
   {
     date: date('2021-08'),
     role: 'Software Developer',

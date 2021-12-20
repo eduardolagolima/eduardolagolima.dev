@@ -6,12 +6,14 @@
   </section>
 </template>
 
-<script>
-import TileWrapper from '~/components/Tile/TileWrapper'
+<script lang="ts">
+import Vue from 'vue'
+
+import TileWrapper from '~/components/Tile/TileWrapper.vue'
 
 import { projects } from '~/data/projects'
 
-export default {
+export default Vue.extend({
   name: 'ProjectsPage',
   components: {
     TileWrapper,
@@ -19,5 +21,5 @@ export default {
   data: () => ({
     projects,
   }),
-}
+})
 </script>

@@ -10,10 +10,14 @@
   </div>
 </template>
 
-<script>
-import TileParent from './TileParent'
+<script lang="ts">
+import Vue, { PropOptions } from 'vue'
 
-export default {
+import TileParent from '~/components/Tile/TileParent.vue'
+
+import { Item } from '~/types/item'
+
+export default Vue.extend({
   components: {
     TileParent,
   },
@@ -21,7 +25,7 @@ export default {
     items: {
       type: Array,
       required: true,
-    },
+    } as PropOptions<Item[]>,
     itemsPerRow: {
       type: Number,
       required: true,
@@ -31,5 +35,5 @@ export default {
       required: true,
     },
   },
-}
+})
 </script>

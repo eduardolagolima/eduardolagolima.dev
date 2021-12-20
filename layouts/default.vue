@@ -12,15 +12,17 @@
   </div>
 </template>
 
-<script>
-import MainHeader from '~/components/Header/MainHeader'
-import MainFooter from '~/components/Footer/MainFooter'
+<script lang="ts">
+import Vue from 'vue'
 
-export default {
+import MainHeader from '~/components/Header/MainHeader.vue'
+import MainFooter from '~/components/Footer/MainFooter.vue'
+
+export default Vue.extend({
   name: 'DefaultLayout',
   components: {
     MainHeader,
     MainFooter,
   },
-}
+})
 </script>

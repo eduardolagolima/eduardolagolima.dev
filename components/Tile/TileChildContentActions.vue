@@ -10,10 +10,14 @@
   </div>
 </template>
 
-<script>
-import ActionButton from '../Button/ActionButton'
+<script lang="ts">
+import Vue, { PropOptions } from 'vue'
 
-export default {
+import ActionButton from '~/components/Button/ActionButton.vue'
+
+import { Action } from '~/types/action'
+
+export default Vue.extend({
   components: {
     ActionButton,
   },
@@ -21,7 +25,7 @@ export default {
     actions: {
       type: Array,
       required: true,
-    },
+    } as PropOptions<Action[]>,
   },
-}
+})
 </script>

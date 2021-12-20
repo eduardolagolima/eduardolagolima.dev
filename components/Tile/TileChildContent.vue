@@ -5,11 +5,15 @@
   </div>
 </template>
 
-<script>
-import TileChildContentTags from './TileChildContentTags'
-import TileChildContentActions from './TileChildContentActions'
+<script lang="ts">
+import Vue, { PropOptions } from 'vue'
 
-export default {
+import TileChildContentTags from '~/components/Tile/TileChildContentTags.vue'
+import TileChildContentActions from '~/components/Tile/TileChildContentActions.vue'
+
+import { Action } from '~/types/action'
+
+export default Vue.extend({
   components: {
     TileChildContentTags,
     TileChildContentActions,
@@ -18,11 +22,11 @@ export default {
     actions: {
       type: Array,
       default: null,
-    },
+    } as PropOptions<Action[]>,
     tags: {
       type: Array,
       default: null,
     },
   },
-}
+})
 </script>

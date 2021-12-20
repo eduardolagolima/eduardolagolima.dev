@@ -1,4 +1,6 @@
-const headerItems = [
+import { HeaderItems } from '~/types/headerItems'
+
+const headerItems: HeaderItems[] = [
   {
     to: 'index',
     description: 'Sobre',

@@ -6,12 +6,16 @@
   </article>
 </template>
 
-<script>
-import TileChildTitle from './TileChildTitle'
-import TileChildSubtitle from './TileChildSubtitle'
-import TileChildContent from './TileChildContent'
+<script lang="ts">
+import Vue, { PropOptions } from 'vue'
 
-export default {
+import TileChildTitle from '~/components/Tile/TileChildTitle.vue'
+import TileChildSubtitle from '~/components/Tile/TileChildSubtitle.vue'
+import TileChildContent from '~/components/Tile/TileChildContent.vue'
+
+import { Item } from '~/types/item'
+
+export default Vue.extend({
   components: {
     TileChildSubtitle,
     TileChildTitle,
@@ -21,11 +25,11 @@ export default {
     item: {
       type: Object,
       required: true,
-    },
+    } as PropOptions<Item>,
     type: {
       type: String,
       required: true,
     },
   },
-}
+})
 </script>

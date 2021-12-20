@@ -10,8 +10,8 @@
       </figure>
     </div>
     <div class="column has-text-centered">
-      <p>{{ currentJob }}</p>
-      <p>{{ graduation }}</p>
+      <p>{{ currentJob | formatExperience }}</p>
+      <p>{{ graduation | formatExperience }}</p>
       <p>Passo Fundo/RS</p>
     </div>
     <div class="is-flex content-centered">
@@ -24,27 +24,33 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
+
 import { experiences } from '~/data/experiences'
 import { contacts } from '~/data/contacts'
+import { Experience } from '~/types/experience'
 
-export default {
+export default Vue.extend({
   name: 'AboutPage',
+  filters: {
+    formatExperience(experience: Experience | undefined) {
+      return experience ? `${experience.role} - ${experience.company}` : ''
+    },
+  },
   layout: 'about',
   data: () => ({
     contacts,
   }),
   computed: {
     currentJob() {
-      const { role, company } = experiences.find(({ currentJob }) => currentJob)
-      return `${role} - ${company}`
+      return experiences.find(({ currentJob }) => currentJob)
     },
     graduation() {
-      const { role, company } = experiences.find(({ graduation }) => graduation)
-      return `${role} - ${company}`
+      return experiences.find(({ graduation }) => graduation)
     },
   },
-}
+})
 </script>
 
 <style scoped>

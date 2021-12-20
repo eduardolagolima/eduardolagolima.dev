@@ -4,8 +4,8 @@
 
 ## Tecnologias usadas
 
-- Vue.js
 - Nuxt.js
+- TypeScript
 - Buefy
 - Netlify
 

@@ -6,10 +6,15 @@ const date = (date: string) => dayjs.utc(date, 'YYYY-MM')
 
 const experiences: Experience[] = [
   {
+    date: date('2022-03'),
+    role: 'Software Engineer',
+    company: 'Questrade Financial Group',
+    currentJob: true,
+  },
+  {
     date: date('2021-08'),
     role: 'Software Developer',
     company: 'Vizir Software Studio',
-    currentJob: true,
   },
   {
     date: date('2020-09'),

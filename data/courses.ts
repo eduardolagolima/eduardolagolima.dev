@@ -3,6 +3,12 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'github',
+    title: 'Git e Github',
+    subtitle: 'Git e Github na Vida Real - Willian Justen',
+    actions: [getRepository('curso-git-e-github-na-vida-real')],
+  },
+  {
     icon: 'react',
     title: 'React Native',
     subtitle:

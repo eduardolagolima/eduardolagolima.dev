@@ -3,6 +3,12 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'language-typescript',
+    title: 'TypeScript',
+    subtitle: 'Mini-curso de TypeScript - Willian Justen',
+    actions: [getRepository('mini-curso-typescript')],
+  },
+  {
     icon: 'github',
     title: 'Git e Github',
     subtitle: 'Git e Github na Vida Real - Willian Justen',

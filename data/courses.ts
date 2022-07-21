@@ -3,6 +3,12 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'language-javascript',
+    title: 'Javascript',
+    subtitle: 'Mini-curso JS Moderno (ES6+) - Willian Justen',
+    actions: [getRepository('mini-curso-js-moderno-es6')],
+  },
+  {
     icon: 'language-typescript',
     title: 'TypeScript',
     subtitle: 'Mini-curso de TypeScript - Willian Justen',

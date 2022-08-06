@@ -7,6 +7,16 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'layers',
+    title: 'Domain-Driven Design',
+    subtitle: 'DDD do jeito certo - EximiaCo',
+    actions: [
+      getUrl(
+        'https://www.youtube.com/playlist?list=PLkpjQs-GfEMN8CHp7tIQqg6JFowrIX9ve'
+      ),
+    ],
+  },
+  {
     icon: 'language-javascript',
     title: 'Javascript',
     subtitle: 'Mini-curso JS Moderno (ES6+) - Willian Justen',

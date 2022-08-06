@@ -1,4 +1,4 @@
-import { getRepository } from '~/utils/getActions'
+import { getRepository } from '~/factories/getActions'
 import { Item } from '~/types/item'
 
 const projects: Item[] = [

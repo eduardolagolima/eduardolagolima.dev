@@ -1,4 +1,4 @@
-import { getCertificate, getRepository } from '~/utils/getActions'
+import { getCourseCertificate, getRepository } from '~/factories/getActions'
 import { Item } from '~/types/item'
 
 const courses: Item[] = [
@@ -26,7 +26,7 @@ const courses: Item[] = [
     subtitle:
       'React Native: Desenvolva APPs Nativas para Android e iOS - Cod3r',
     actions: [
-      getCertificate('courses', 'react-native.pdf'),
+      getCourseCertificate('react-native.pdf'),
       getRepository('curso-cod3r-react-native'),
     ],
   },
@@ -35,7 +35,7 @@ const courses: Item[] = [
     title: 'TypeScript',
     subtitle: 'Dominando TypeScript - Hcode',
     actions: [
-      getCertificate('courses', 'typescript.pdf'),
+      getCourseCertificate('typescript.pdf'),
       getRepository('curso-hcode-typescript'),
     ],
   },
@@ -44,7 +44,7 @@ const courses: Item[] = [
     title: 'CSS Flexbox',
     subtitle: 'CSS Flexbox - Origamid',
     actions: [
-      getCertificate('courses', 'css-flexbox.pdf'),
+      getCourseCertificate('css-flexbox.pdf'),
       getRepository('curso-origamid-cssflexbox'),
     ],
   },

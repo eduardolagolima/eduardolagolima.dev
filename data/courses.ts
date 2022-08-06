@@ -1,4 +1,8 @@
-import { getCourseCertificate, getRepository } from '~/factories/getActions'
+import {
+  getCourseCertificate,
+  getRepository,
+  getUrl,
+} from '~/factories/getActions'
 import { Item } from '~/types/item'
 
 const courses: Item[] = [
@@ -6,19 +10,34 @@ const courses: Item[] = [
     icon: 'language-javascript',
     title: 'Javascript',
     subtitle: 'Mini-curso JS Moderno (ES6+) - Willian Justen',
-    actions: [getRepository('mini-curso-js-moderno-es6')],
+    actions: [
+      getUrl(
+        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi'
+      ),
+      getRepository('mini-curso-js-moderno-es6'),
+    ],
   },
   {
     icon: 'language-typescript',
     title: 'TypeScript',
     subtitle: 'Mini-curso de TypeScript - Willian Justen',
-    actions: [getRepository('mini-curso-typescript')],
+    actions: [
+      getUrl(
+        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_'
+      ),
+      getRepository('mini-curso-typescript'),
+    ],
   },
   {
     icon: 'github',
     title: 'Git e Github',
     subtitle: 'Git e Github na Vida Real - Willian Justen',
-    actions: [getRepository('curso-git-e-github-na-vida-real')],
+    actions: [
+      getUrl(
+        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg'
+      ),
+      getRepository('curso-git-e-github-na-vida-real'),
+    ],
   },
   {
     icon: 'react',
@@ -26,6 +45,7 @@ const courses: Item[] = [
     subtitle:
       'React Native: Desenvolva APPs Nativas para Android e iOS - Cod3r',
     actions: [
+      getUrl('https://www.udemy.com/course/curso-react-native/'),
       getCourseCertificate('react-native.pdf'),
       getRepository('curso-cod3r-react-native'),
     ],
@@ -35,6 +55,7 @@ const courses: Item[] = [
     title: 'TypeScript',
     subtitle: 'Dominando TypeScript - Hcode',
     actions: [
+      getUrl('https://www.udemy.com/course/curso-online-typescript/'),
       getCourseCertificate('typescript.pdf'),
       getRepository('curso-hcode-typescript'),
     ],
@@ -44,6 +65,7 @@ const courses: Item[] = [
     title: 'CSS Flexbox',
     subtitle: 'CSS Flexbox - Origamid',
     actions: [
+      getUrl('https://www.origamid.com/curso/css-flexbox/'),
       getCourseCertificate('css-flexbox.pdf'),
       getRepository('curso-origamid-cssflexbox'),
     ],

@@ -7,6 +7,17 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'language-go',
+    title: 'Go',
+    subtitle: 'Desenvolvimento Web com Go - Elton Minetto',
+    actions: [
+      getUrl(
+        'https://www.youtube.com/playlist?list=PL0qudqr7_CuStQUsf2vtHXMxOp5gl_ENc'
+      ),
+      getRepository('curso-desenvolvimento-web-com-go'),
+    ],
+  },
+  {
     icon: 'layers',
     title: 'Domain-Driven Design',
     subtitle: 'DDD do jeito certo - EximiaCo',

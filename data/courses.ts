@@ -7,6 +7,15 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'flask-outline',
+    title: 'Testes',
+    subtitle: 'Aprenda a testar Aplicações Javascript - Fábio Vedovelli',
+    actions: [
+      getUrl('https://javascript.tv.br/'),
+      getRepository('curso-testes-javascript'),
+    ],
+  },
+  {
     icon: 'language-go',
     title: 'Go',
     subtitle: 'Desenvolvimento Web com Go - Elton Minetto',

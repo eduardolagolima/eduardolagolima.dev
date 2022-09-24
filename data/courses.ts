@@ -7,6 +7,16 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'vuejs',
+    title: 'Vue.js 3',
+    subtitle: 'Curso Vue.js 3 do iniciante ao avançado - Igor Halfeld',
+    actions: [
+      getUrl('https://treinamento.vuejsbrasil.org/'),
+      getCourseCertificate('curso-vuejs3.pdf'),
+      getRepository('curso-vuejs3'),
+    ],
+  },
+  {
     icon: 'flask-outline',
     title: 'Testes',
     subtitle: 'Aprenda a testar Aplicações Javascript - Fábio Vedovelli',

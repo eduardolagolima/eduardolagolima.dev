@@ -7,6 +7,16 @@ import { Item } from '~/types/item'
 
 const courses: Item[] = [
   {
+    icon: 'react',
+    title: 'Remix.run',
+    subtitle: 'Remix.run - Fabio Vedovelli',
+    actions: [
+      getUrl(
+        'https://youtube.com/playlist?list=PLFJmwzuHdBRRtyT_87aCtK7n8FTPmDbES'
+      ),
+    ],
+  },
+  {
     icon: 'vuejs',
     title: 'Vue.js 3',
     subtitle: 'Curso Vue.js 3 do iniciante ao avançado - Igor Halfeld',

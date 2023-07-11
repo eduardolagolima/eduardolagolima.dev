@@ -4,7 +4,9 @@
 
     <div class="timeline is-centered">
       <header class="timeline-header">
-        <span class="tag is-medium is-primary">{{ currentYear }}</span>
+        <span class="tag is-medium is-primary">{{
+          new Date().getFullYear()
+        }}</span>
       </header>
 
       <div
@@ -14,14 +16,14 @@
       >
         <div class="timeline-marker" />
         <div class="timeline-content">
-          <p class="heading">{{ experience.date | formatDate }}</p>
+          <p class="heading">{{ experience.when }}</p>
           <p>{{ experience.role }}</p>
           <p class="company">{{ experience.company }}</p>
         </div>
       </div>
 
       <div class="timeline-header">
-        <span class="tag is-medium is-primary">{{ initialYear }}</span>
+        <span class="tag is-medium is-primary">2016</span>
       </div>
     </div>
   </section>
@@ -30,25 +32,12 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import dayjs, { Dayjs } from 'dayjs'
-
 import { experiences } from '~/data/experiences'
-
-const years = experiences.map(({ date }) => date.year())
-const initialYear = Math.min(...years)
-const currentYear = dayjs().year()
 
 export default Vue.extend({
   name: 'ExperiencePage',
-  filters: {
-    formatDate(date: Dayjs) {
-      return date.format('MMMM [de] YYYY')
-    },
-  },
   data: () => ({
     experiences,
-    initialYear,
-    currentYear,
   }),
 })
 </script>

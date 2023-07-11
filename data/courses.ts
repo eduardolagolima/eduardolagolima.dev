@@ -1,11 +1,7 @@
-import {
-  getCourseCertificate,
-  getRepository,
-  getUrl,
-} from '~/factories/getActions'
+import { getCertificate, getRepository, getUrl } from '~/factories/action'
 import { Item } from '~/types/item'
 
-const courses: Item[] = [
+export const courses: Item[] = [
   {
     icon: 'react',
     title: 'Remix.run',
@@ -22,7 +18,7 @@ const courses: Item[] = [
     subtitle: 'Curso Vue.js 3 do iniciante ao avançado - Igor Halfeld',
     actions: [
       getUrl('https://treinamento.vuejsbrasil.org/'),
-      getCourseCertificate('curso-vuejs3.pdf'),
+      getCertificate('courses/curso-vuejs3.pdf'),
       getRepository('curso-vuejs3'),
     ],
   },
@@ -96,7 +92,7 @@ const courses: Item[] = [
       'React Native: Desenvolva APPs Nativas para Android e iOS - Cod3r',
     actions: [
       getUrl('https://www.udemy.com/course/curso-react-native/'),
-      getCourseCertificate('react-native.pdf'),
+      getCertificate('courses/react-native.pdf'),
       getRepository('curso-cod3r-react-native'),
     ],
   },
@@ -106,7 +102,7 @@ const courses: Item[] = [
     subtitle: 'Dominando TypeScript - Hcode',
     actions: [
       getUrl('https://www.udemy.com/course/curso-online-typescript/'),
-      getCourseCertificate('typescript.pdf'),
+      getCertificate('courses/typescript.pdf'),
       getRepository('curso-hcode-typescript'),
     ],
   },
@@ -116,10 +112,8 @@ const courses: Item[] = [
     subtitle: 'CSS Flexbox - Origamid',
     actions: [
       getUrl('https://www.origamid.com/curso/css-flexbox/'),
-      getCourseCertificate('css-flexbox.pdf'),
+      getCertificate('courses/css-flexbox.pdf'),
       getRepository('curso-origamid-cssflexbox'),
     ],
   },
 ]
-
-export { courses }

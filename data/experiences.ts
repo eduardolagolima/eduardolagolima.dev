@@ -4,7 +4,7 @@ import { Experience } from '~/types/experience'
 
 const date = (date: string) => dayjs.utc(date, 'YYYY-MM')
 
-const experiences: Experience[] = [
+export const experiences: Experience[] = [
   {
     date: date('2022-03'),
     role: 'Software Engineer',
@@ -38,5 +38,3 @@ const experiences: Experience[] = [
     company: 'Atua Sistemas de Informação',
   },
 ]
-
-export { experiences }

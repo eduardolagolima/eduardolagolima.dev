@@ -1,6 +1,4 @@
-type Contact = {
+export type Contact = {
   url: string
   icon: string
 }
-
-export { Contact }

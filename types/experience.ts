@@ -1,7 +1,5 @@
-import { Dayjs } from 'dayjs'
-
 export type Experience = {
-  date: Dayjs
+  when: string
   role: string
   company: string
   currentJob?: boolean

@@ -1,7 +1,7 @@
-import { getRepository } from '~/factories/getActions'
+import { getRepository } from '~/factories/action'
 import { Item } from '~/types/item'
 
-const projects: Item[] = [
+export const projects: Item[] = [
   {
     icon: 'account',
     title: 'eduardolagolima.dev',
@@ -10,5 +10,3 @@ const projects: Item[] = [
     actions: [getRepository('eduardolagolima.dev')],
   },
 ]
-
-export { projects }

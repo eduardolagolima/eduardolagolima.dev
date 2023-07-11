@@ -1,6 +1,6 @@
 import { Contact } from '~/types/contact'
 
-const contacts: Contact[] = [
+export const contacts: Contact[] = [
   {
     url: 'https://github.com/eduardolagolima',
     icon: 'github',
@@ -14,5 +14,3 @@ const contacts: Contact[] = [
     icon: 'email',
   },
 ]
-
-export { contacts }

@@ -1,6 +1,6 @@
 import { HeaderItems } from '~/types/headerItems'
 
-const headerItems: HeaderItems[] = [
+export const headerItems: HeaderItems[] = [
   {
     to: 'index',
     description: 'Sobre',
@@ -26,5 +26,3 @@ const headerItems: HeaderItems[] = [
     description: 'Eventos',
   },
 ]
-
-export { headerItems }

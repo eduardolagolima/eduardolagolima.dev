@@ -1,6 +1,6 @@
 import { Item } from '~/types/item'
 
-const skills: Item[] = [
+export const skills: Item[] = [
   {
     title: 'Frontend',
     tags: ['Javascript', 'Vue.js', 'React.js', 'React Native'],
@@ -18,5 +18,3 @@ const skills: Item[] = [
     tags: ['Linux', 'Docker', 'Shell Script', 'Kanban', 'Scrum'],
   },
 ]
-
-export { skills }

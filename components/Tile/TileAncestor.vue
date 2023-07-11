@@ -5,7 +5,6 @@
       :key="index"
       :items-per-row="itemsPerRow"
       :item="item"
-      :type="type"
     />
   </div>
 </template>
@@ -28,10 +27,6 @@ export default Vue.extend({
     } as PropOptions<Item[]>,
     itemsPerRow: {
       type: Number,
-      required: true,
-    },
-    type: {
-      type: String,
       required: true,
     },
   },

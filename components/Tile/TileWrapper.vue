@@ -5,7 +5,6 @@
       :key="index"
       :items="chunk"
       :items-per-row="itemsPerRow"
-      :type="type"
     />
   </Fragment>
 </template>
@@ -33,10 +32,6 @@ export default Vue.extend({
     itemsPerRow: {
       type: Number,
       default: 2,
-    },
-    type: {
-      type: String,
-      default: 'is-primary',
     },
   },
   computed: {

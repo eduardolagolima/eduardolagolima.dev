@@ -1,5 +1,5 @@
 <template>
-  <article :class="['tile', 'is-child', 'notification', type]">
+  <article class="tile is-child notification is-primary">
     <p class="title">
       <b-icon v-if="item.icon" :icon="item.icon" size="is-medium" />
       {{ item.title }}
@@ -50,10 +50,6 @@ export default Vue.extend({
       type: Object,
       required: true,
     } as PropOptions<Item>,
-    type: {
-      type: String,
-      required: true,
-    },
   },
 })
 </script>

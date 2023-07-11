@@ -1,6 +1,6 @@
 <template>
   <div :class="['tile', 'is-parent', horizontalSize]">
-    <TileChild :item="item" :type="type" />
+    <TileChild :item="item" />
   </div>
 </template>
 
@@ -24,10 +24,6 @@ export default Vue.extend({
     } as PropOptions<Item>,
     itemsPerRow: {
       type: Number,
-      required: true,
-    },
-    type: {
-      type: String,
       required: true,
     },
   },

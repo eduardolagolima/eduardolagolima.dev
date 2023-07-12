@@ -22,7 +22,7 @@
   "dependencies": {
     "bulma-timeline": "^3.0.5",
     "core-js": "^3.25.3",
-    "lodash": "^4.17.21",
+    "lodash.chunk": "^4.2.0",
     "nuxt": "^2.15.8",
     "nuxt-buefy": "^0.4.24",
     "vue": "^2.7.10",
@@ -36,7 +36,7 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
-    "@types/lodash": "^4.14.192",
+    "@types/lodash.chunk": "^4.2.7",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^4.0.0",

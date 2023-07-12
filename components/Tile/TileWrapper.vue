@@ -13,7 +13,7 @@
 import Vue, { PropOptions } from 'vue'
 
 import { Fragment } from 'vue-fragment'
-import chunk from 'lodash/chunk'
+import chunk from 'lodash.chunk'
 
 import TileAncestor from '~/components/Tile/TileAncestor.vue'
 

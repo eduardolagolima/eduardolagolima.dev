@@ -12,12 +12,7 @@
     "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:prettier",
-    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "*.{js,ts,vue}": "eslint --cache",
-    "*.**": "prettier --check --ignore-unknown"
+    "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix"
   },
   "dependencies": {
     "bulma-timeline": "^3.0.5",
@@ -41,8 +36,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-vue": "^9.5.1",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   }
 }

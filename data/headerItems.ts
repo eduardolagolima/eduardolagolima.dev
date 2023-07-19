@@ -2,7 +2,7 @@ import { HeaderItems } from '~/types/headerItems'
 
 export const headerItems: HeaderItems[] = [
   {
-    to: 'index',
+    to: '/',
     description: 'Sobre',
   },
   {

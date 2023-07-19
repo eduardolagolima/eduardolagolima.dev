@@ -11,11 +11,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "bulma": "^0.9.4",
     "bulma-timeline": "^3.0.5",
     "core-js": "^3.25.3",
     "lodash.chunk": "^4.2.0",
     "nuxt": "^2.15.8",
-    "nuxt-buefy": "^0.4.24",
     "vue": "^2.7.10",
     "vue-fragment": "^1.6.0",
     "vue-server-renderer": "^2.7.10",

@@ -1,17 +1,26 @@
 <template>
-  <b-navbar type="is-primary">
-    <template slot="brand">
-      <b-navbar-item tag="nuxt-link" :to="{ path: '/' }">
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <NuxtLink class="navbar-item" to="/">
         Eduardo Lago Lima
-      </b-navbar-item>
-    </template>
+      </NuxtLink>
 
-    <template slot="end">
-      <template v-for="({ to, description }, key) of headerItems">
-        <MainHeaderItem :key="key" :to="to" :description="description" />
-      </template>
-    </template>
-  </b-navbar>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-end">
+        <template v-for="({ to, description }, key) of headerItems">
+          <MainHeaderItem :key="key" :to="to" :description="description" />
+        </template>
+      </div>
+    </div>
+  </nav>
+
 </template>
 
 <script lang="ts">

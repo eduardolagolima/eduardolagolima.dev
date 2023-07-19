@@ -6,7 +6,7 @@
 
 - Nuxt.js
 - TypeScript
-- Buefy
+- Bulma
 - Netlify
 
 ## Como testar

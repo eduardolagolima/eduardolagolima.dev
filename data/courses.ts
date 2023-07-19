@@ -3,7 +3,7 @@ import { Item } from '~/types/item'
 
 export const courses: Item[] = [
   {
-    icon: 'react',
+    icon: 'mdi mdi-36px mdi-react',
     title: 'Remix.run',
     subtitle: 'Remix.run - Fabio Vedovelli',
     actions: [
@@ -13,7 +13,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'vuejs',
+    icon: 'mdi mdi-36px mdi-vuejs',
     title: 'Vue.js 3',
     subtitle: 'Curso Vue.js 3 do iniciante ao avançado - Igor Halfeld',
     actions: [
@@ -23,7 +23,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'flask-outline',
+    icon: 'mdi mdi-36px mdi-flask-outline',
     title: 'Testes',
     subtitle: 'Aprenda a testar Aplicações Javascript - Fábio Vedovelli',
     actions: [
@@ -32,7 +32,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'language-go',
+    icon: 'mdi mdi-36px mdi-language-go',
     title: 'Go',
     subtitle: 'Desenvolvimento Web com Go - Elton Minetto',
     actions: [
@@ -43,7 +43,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'layers',
+    icon: 'mdi mdi-36px mdi-layers',
     title: 'Domain-Driven Design',
     subtitle: 'DDD do jeito certo - EximiaCo',
     actions: [
@@ -53,7 +53,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'language-javascript',
+    icon: 'mdi mdi-36px mdi-language-javascript',
     title: 'Javascript',
     subtitle: 'Mini-curso JS Moderno (ES6+) - Willian Justen',
     actions: [
@@ -64,7 +64,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'language-typescript',
+    icon: 'mdi mdi-36px mdi-language-typescript',
     title: 'TypeScript',
     subtitle: 'Mini-curso de TypeScript - Willian Justen',
     actions: [
@@ -75,7 +75,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'github',
+    icon: 'mdi mdi-36px mdi-github',
     title: 'Git e Github',
     subtitle: 'Git e Github na Vida Real - Willian Justen',
     actions: [
@@ -86,7 +86,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'react',
+    icon: 'mdi mdi-36px mdi-react',
     title: 'React Native',
     subtitle:
       'React Native: Desenvolva APPs Nativas para Android e iOS - Cod3r',
@@ -97,7 +97,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'language-typescript',
+    icon: 'mdi mdi-36px mdi-language-typescript',
     title: 'TypeScript',
     subtitle: 'Dominando TypeScript - Hcode',
     actions: [
@@ -107,7 +107,7 @@ export const courses: Item[] = [
     ],
   },
   {
-    icon: 'language-css3',
+    icon: 'mdi mdi-36px mdi-language-css3',
     title: 'CSS Flexbox',
     subtitle: 'CSS Flexbox - Origamid',
     actions: [

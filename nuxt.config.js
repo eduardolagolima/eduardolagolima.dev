@@ -42,6 +42,7 @@ export default {
   css: [
     'node_modules/bulma/css/bulma.min.css',
     'node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
+    '@mdi/font/css/materialdesignicons.min.css',
     'assets/css/global.css',
   ],
 

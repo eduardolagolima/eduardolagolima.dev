@@ -1,7 +1,9 @@
 <template>
   <article class="tile is-child notification is-primary">
     <p class="title">
-      <b-icon v-if="item.icon" :icon="item.icon" size="is-medium" />
+      <span v-if="item.icon" class="icon is-medium">
+        <i :class="item.icon"></i>
+      </span>
       {{ item.title }}
     </p>
 
@@ -10,16 +12,15 @@
     </p>
 
     <div class="content">
-      <b-taglist v-if="item.tags">
-        <b-tag
+      <div v-if="item.tags" class="tags">
+        <span
           v-for="(tag, key) of item.tags"
           :key="key"
-          size="is-small"
-          type="is-primary is-light"
+          class="tag is-primary is-light"
         >
           # {{ tag }}
-        </b-tag>
-      </b-taglist>
+        </span>
+      </div>
 
       <div v-if="item.actions" class="buttons">
         <ActionButton

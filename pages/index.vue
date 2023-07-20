@@ -17,7 +17,9 @@
     <div class="is-flex is-justify-content-center">
       <template v-for="({ url, icon }, key) of contacts">
         <a :key="key" target="_blank" :href="url">
-          <b-icon :icon="icon" size="is-large" type="is-primary" />
+          <span class="icon is-large has-text-primary">
+            <i :class="icon"></i>
+          </span>
         </a>
       </template>
     </div>

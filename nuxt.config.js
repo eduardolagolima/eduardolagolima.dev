@@ -40,8 +40,10 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/css/global.css',
-    '~/node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
+    'node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
+    '@mdi/font/css/materialdesignicons.min.css',
+    'assets/css/bulma.scss',
+    'assets/css/global.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -57,10 +59,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/buefy
-    'nuxt-buefy',
-  ],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

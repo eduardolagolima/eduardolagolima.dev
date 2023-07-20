@@ -1,11 +1,11 @@
 <template>
-  <b-navbar-item
+  <NuxtLink
+    class="navbar-item"
     exact-active-class="is-active"
-    tag="nuxt-link"
-    :to="{ name: to }"
+    :to="to"
   >
     {{ description }}
-  </b-navbar-item>
+  </NuxtLink>
 </template>
 
 <script lang="ts">

@@ -1,15 +1,10 @@
 <template>
-  <b-button
-    target="_blank"
-    :href="url"
-    tag="a"
-    type="is-primary"
-    inverted
-    outlined
-    :icon-right="icon"
-  >
-    {{ label }}
-  </b-button>
+  <a class="button is-primary is-inverted is-outlined" target="_blank" :href="url">
+    <span>{{ label }}</span>
+    <span class="icon is-small">
+      <i :class="icon"></i>
+    </span>
+  </a>
 </template>
 
 <script lang="ts">

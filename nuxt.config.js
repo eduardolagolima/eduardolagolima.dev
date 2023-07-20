@@ -40,9 +40,9 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'node_modules/bulma/css/bulma.min.css',
     'node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
     '@mdi/font/css/materialdesignicons.min.css',
+    'assets/css/bulma.scss',
     'assets/css/global.css',
   ],
 

@@ -18,7 +18,7 @@
         <div class="timeline-content">
           <p class="heading">{{ experience.when }}</p>
           <p>{{ experience.role }}</p>
-          <p class="company">{{ experience.company }}</p>
+          <p class="is-size-7 mt-1">{{ experience.company }}</p>
         </div>
       </div>
 
@@ -41,10 +41,3 @@ export default Vue.extend({
   }),
 })
 </script>
-
-<style scoped>
-.company {
-  margin-top: 5px;
-  font-size: 0.75rem;
-}
-</style>

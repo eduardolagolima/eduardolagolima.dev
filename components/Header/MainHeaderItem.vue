@@ -1,5 +1,9 @@
 <template>
-  <NuxtLink exact-active-class="is-active" class="navbar-item" :to="to">
+  <NuxtLink
+    class="navbar-item"
+    exact-active-class="is-active"
+    :to="to"
+  >
     {{ description }}
   </NuxtLink>
 </template>

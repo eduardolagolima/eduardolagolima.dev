@@ -5,14 +5,26 @@
         Eduardo Lago Lima
       </NuxtLink>
 
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+      <a
+        @click="isOpened = !isOpened"
+        role="button"
+        class="navbar-burger"
+        :class="{'is-active': isOpened}"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbar"
+      >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
 
-    <div id="navbar" class="navbar-menu">
+    <div
+      id="navbar"
+      class="navbar-menu"
+      :class="{'is-active': isOpened}"
+    >
       <div class="navbar-end">
         <template v-for="({ to, description }, key) of headerItems">
           <MainHeaderItem :key="key" :to="to" :description="description" />
@@ -36,6 +48,7 @@ export default Vue.extend({
   },
   data: () => ({
     headerItems,
+    isOpened: false,
   }),
 })
 </script>

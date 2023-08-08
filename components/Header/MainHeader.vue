@@ -27,7 +27,11 @@
     >
       <div class="navbar-end">
         <template v-for="({ to, description }) of headerItems">
-          <MainHeaderItem :to="to" :description="description" />
+          <MainHeaderItem
+            @click="isOpened = false"
+            :to="to"
+            :description="description"
+          />
         </template>
       </div>
     </div>

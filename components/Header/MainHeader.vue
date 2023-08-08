@@ -26,8 +26,8 @@
       :class="{'is-active': isOpened}"
     >
       <div class="navbar-end">
-        <template v-for="({ to, description }, key) of headerItems">
-          <MainHeaderItem :key="key" :to="to" :description="description" />
+        <template v-for="({ to, description }) of headerItems">
+          <MainHeaderItem :to="to" :description="description" />
         </template>
       </div>
     </div>
@@ -36,13 +36,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from 'vue'
 
 import MainHeaderItem from '~/components/Header/MainHeaderItem.vue'
 
 import { headerItems } from '~/data/headerItems'
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     MainHeaderItem,
   },

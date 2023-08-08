@@ -1,30 +1,40 @@
 # eduardolagolima.dev
 
-> Meu site pessoal :)
+> My personal site
 
-## Tecnologias usadas
+## Techs
 
 - Nuxt.js
 - TypeScript
 - Bulma
 - Netlify
 
-## Como testar
+## Setup
+
+Make sure to install the dependencies:
 
 ```bash
-# clone repository
-$ git clone https://github.com/eduardolagolima/eduardolagolima.dev.git
+npm install
+```
 
-# install dependencies
-$ npm install
+## Development Server
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+Start the development server on `http://localhost:3000`:
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+```bash
+npm run dev
+```
 
-# generate static project
-$ npm run generate
+## Production
+
+Build the application for production:
+
+```bash
+npm run build
+```
+
+Locally preview production build:
+
+```bash
+npm run preview
 ```

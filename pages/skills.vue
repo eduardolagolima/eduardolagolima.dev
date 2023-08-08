@@ -7,13 +7,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from 'vue'
 
 import TileWrapper from '~/components/Tile/TileWrapper.vue'
 
 import { skills } from '~/data/skills'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'SkillsPage',
   components: {
     TileWrapper,

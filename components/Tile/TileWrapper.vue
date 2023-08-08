@@ -1,34 +1,31 @@
 <template>
-  <Fragment>
-    <TileAncestor
-      v-for="(chunk, index) in chunks"
-      :key="index"
-      :items="chunk"
-      :items-per-row="itemsPerRow"
-    />
-  </Fragment>
+  <TileAncestor
+    v-for="(chunk, index) in chunks"
+    :key="index"
+    :items="chunk"
+    :items-per-row="itemsPerRow"
+  />
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
 
-import { Fragment } from 'vue-fragment'
 import chunk from 'lodash.chunk'
 
 import TileAncestor from '~/components/Tile/TileAncestor.vue'
 
 import { Item } from '~/types/item'
 
-export default Vue.extend({
+export default defineComponent({
   components: {
-    Fragment,
     TileAncestor,
   },
   props: {
     items: {
-      type: Array,
+      type: Array as PropType<Item[]>,
       required: true,
-    } as PropOptions<Item[]>,
+    },
     itemsPerRow: {
       type: Number,
       default: 2,

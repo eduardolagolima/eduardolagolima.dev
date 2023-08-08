@@ -7,13 +7,13 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from 'vue'
 
 import TileWrapper from '~/components/Tile/TileWrapper.vue'
 
 import { projects } from '~/data/projects'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'ProjectsPage',
   components: {
     TileWrapper,

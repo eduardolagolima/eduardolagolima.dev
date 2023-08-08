@@ -36,21 +36,22 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
 
 import ActionButton from '~/components/Button/ActionButton.vue'
 
 import { Item } from '~/types/item'
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     ActionButton,
   },
   props: {
     item: {
-      type: Object,
+      type: Object as PropType<Item>,
       required: true,
-    } as PropOptions<Item>,
+    },
   },
 })
 </script>

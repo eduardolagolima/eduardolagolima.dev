@@ -30,11 +30,11 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from 'vue'
 
 import { experiences } from '~/data/experiences'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'ExperiencePage',
   data: () => ({
     experiences,

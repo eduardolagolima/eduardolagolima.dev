@@ -1,7 +1,6 @@
 html,
 body,
-#__nuxt,
-#__layout {
+#__nuxt {
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;

@@ -10,13 +10,13 @@
       </figure>
     </div>
     <div class="column has-text-centered">
-      <p>{{ currentJob | formatExperience }}</p>
-      <p>{{ graduation | formatExperience }}</p>
+      <p>{{ formatExperience(currentJob) }}</p>
+      <p>{{ formatExperience(graduation) }}</p>
       <p>Passo Fundo/RS</p>
     </div>
     <div class="is-flex is-justify-content-center">
-      <template v-for="({ url, icon }, key) of contacts">
-        <a :key="key" target="_blank" :href="url">
+      <template v-for="({ url, icon }) of contacts">
+        <a target="_blank" :href="url">
           <span class="icon is-large has-text-primary">
             <i :class="icon"></i>
           </span>
@@ -27,29 +27,30 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+definePageMeta({ layout: 'about' });
+
+import { defineComponent } from 'vue'
 
 import { experiences } from '~/data/experiences'
 import { contacts } from '~/data/contacts'
 import { Experience } from '~/types/experience'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'AboutPage',
-  filters: {
-    formatExperience(experience: Experience | undefined) {
-      return experience ? `${experience.role} - ${experience.company}` : ''
+  methods: {
+    formatExperience({role, company}: Experience) {
+      return `${role} - ${company}`
     },
   },
-  layout: 'about',
   data: () => ({
     contacts,
   }),
   computed: {
     currentJob() {
-      return experiences.find(({ currentJob }) => currentJob)
+      return experiences.find(({ currentJob }) => currentJob)!
     },
     graduation() {
-      return experiences.find(({ graduation }) => graduation)
+      return experiences.find(({ graduation }) => graduation)!
     },
   },
 })

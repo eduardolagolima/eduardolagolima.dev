@@ -5,7 +5,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import { defineComponent } from 'vue'
+import type { PropType } from 'vue'
 
 import TileChild from '~/components/Tile/TileChild.vue'
 
@@ -13,15 +14,15 @@ import { Item } from '~/types/item'
 
 const COLUMNS = 12
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     TileChild,
   },
   props: {
     item: {
-      type: Object,
+      type: Object as PropType<Item>,
       required: true,
-    } as PropOptions<Item>,
+    },
     itemsPerRow: {
       type: Number,
       required: true,

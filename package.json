@@ -1,32 +1,27 @@
 {
   "name": "eduardolagolima.dev",
   "version": "1.0.0",
-  "description": "Site pessoal",
+  "description": "My personal site",
   "author": "Eduardo Lago Lima",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@types/lodash.chunk": "^4.2.7",
+    "@types/node": "^18.16.19",
+    "nuxt": "^3.6.5"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
     "bulma": "^0.9.4",
     "bulma-timeline": "^3.0.5",
-    "core-js": "^3.25.3",
     "lodash.chunk": "^4.2.0",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.10",
-    "vue-fragment": "^1.6.0",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
-  },
-  "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0",
-    "@types/lodash.chunk": "^4.2.7",
-    "sass": "^1.63.6",
-    "sass-loader": "^10.4.1"
+    "sass": "^1.64.0"
   }
 }

@@ -8,7 +8,7 @@ export const courses: Item[] = [
     subtitle: 'Remix.run - Fabio Vedovelli',
     actions: [
       getUrl(
-        'https://youtube.com/playlist?list=PLFJmwzuHdBRRtyT_87aCtK7n8FTPmDbES'
+        'https://youtube.com/playlist?list=PLFJmwzuHdBRRtyT_87aCtK7n8FTPmDbES',
       ),
     ],
   },
@@ -37,7 +37,7 @@ export const courses: Item[] = [
     subtitle: 'Desenvolvimento Web com Go - Elton Minetto',
     actions: [
       getUrl(
-        'https://www.youtube.com/playlist?list=PL0qudqr7_CuStQUsf2vtHXMxOp5gl_ENc'
+        'https://www.youtube.com/playlist?list=PL0qudqr7_CuStQUsf2vtHXMxOp5gl_ENc',
       ),
       getRepository('curso-desenvolvimento-web-com-go'),
     ],
@@ -48,7 +48,7 @@ export const courses: Item[] = [
     subtitle: 'DDD do jeito certo - EximiaCo',
     actions: [
       getUrl(
-        'https://www.youtube.com/playlist?list=PLkpjQs-GfEMN8CHp7tIQqg6JFowrIX9ve'
+        'https://www.youtube.com/playlist?list=PLkpjQs-GfEMN8CHp7tIQqg6JFowrIX9ve',
       ),
     ],
   },
@@ -58,7 +58,7 @@ export const courses: Item[] = [
     subtitle: 'Mini-curso JS Moderno (ES6+) - Willian Justen',
     actions: [
       getUrl(
-        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi'
+        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPQ1BE8klOtheBC0mtL3hEi',
       ),
       getRepository('mini-curso-js-moderno-es6'),
     ],
@@ -69,7 +69,7 @@ export const courses: Item[] = [
     subtitle: 'Mini-curso de TypeScript - Willian Justen',
     actions: [
       getUrl(
-        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_'
+        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiPanrzauGa7vMuve7_vnXG_',
       ),
       getRepository('mini-curso-typescript'),
     ],
@@ -80,7 +80,7 @@ export const courses: Item[] = [
     subtitle: 'Git e Github na Vida Real - Willian Justen',
     actions: [
       getUrl(
-        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg'
+        'https://www.youtube.com/playlist?list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg',
       ),
       getRepository('curso-git-e-github-na-vida-real'),
     ],

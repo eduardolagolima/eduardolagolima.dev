@@ -1,8 +1,8 @@
 <template>
   <TileAncestor
-    v-for="(chunk, index) in chunks"
+    v-for="(chunkedItem, index) in chunkedItems"
     :key="index"
-    :items="chunk"
+    :items="chunkedItem"
     :items-per-row="itemsPerRow"
   />
 </template>
@@ -21,5 +21,5 @@ const { items, itemsPerRow } = withDefaults(defineProps<Props>(), {
   itemsPerRow: 2,
 })
 
-const chunks = chunk(items, itemsPerRow)
+const chunkedItems = chunk(items, itemsPerRow)
 </script>

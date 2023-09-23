@@ -21,7 +21,7 @@
     <div id="navbar" class="navbar-menu" :class="{ 'is-active': isOpened }">
       <div class="navbar-end">
         <template v-for="{ to, description } of headerItems" :key="to">
-          <MainHeaderItem
+          <AppHeaderItem
             :to="to"
             :description="description"
             @click="isOpened = false"

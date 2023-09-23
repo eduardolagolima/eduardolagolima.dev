@@ -1,12 +1,12 @@
 <template>
   <div class="app">
-    <MainHeader />
+    <AppHeader />
 
     <div class="main-content columns is-centered is-vcentered is-mobile">
       <slot />
     </div>
 
-    <MainFooter />
+    <AppFooter />
   </div>
 </template>
 

@@ -23,7 +23,7 @@
       </div>
 
       <div v-if="item.actions" class="buttons">
-        <ActionButton
+        <AppButton
           v-for="(action, key) of item.actions"
           :key="key"
           :icon="action.icon"

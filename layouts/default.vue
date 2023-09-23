@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <MainHeader />
+    <AppHeader />
 
     <div class="main-content columns">
       <div class="container column">
@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <MainFooter />
+    <AppFooter />
   </div>
 </template>
 

@@ -21,11 +21,14 @@
     <div id="navbar" class="navbar-menu" :class="{ 'is-active': isOpened }">
       <div class="navbar-end">
         <template v-for="{ to, description } of headerItems" :key="to">
-          <AppHeaderItem
+          <NuxtLink
+            class="navbar-item"
+            exact-active-class="is-active"
             :to="to"
-            :description="description"
             @click="isOpened = false"
-          />
+          >
+            {{ description }}
+          </NuxtLink>
         </template>
       </div>
     </div>

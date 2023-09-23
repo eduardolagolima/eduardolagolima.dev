@@ -1,40 +1,25 @@
 <template>
   <TileAncestor
-    v-for="(chunk, index) in chunks"
+    v-for="(chunkedItem, index) in chunkedItems"
     :key="index"
-    :items="chunk"
+    :items="chunkedItem"
     :items-per-row="itemsPerRow"
   />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
+<script setup lang="ts">
 import chunk from 'lodash.chunk'
-
-import TileAncestor from '~/components/Tile/TileAncestor.vue'
 
 import { Item } from '~/types/item'
 
-export default defineComponent({
-  components: {
-    TileAncestor,
-  },
-  props: {
-    items: {
-      type: Array as PropType<Item[]>,
-      required: true,
-    },
-    itemsPerRow: {
-      type: Number,
-      default: 2,
-    },
-  },
-  computed: {
-    chunks() {
-      return chunk(this.items, this.itemsPerRow)
-    },
-  },
+interface Props {
+  items: Item[]
+  itemsPerRow?: number
+}
+
+const { items, itemsPerRow } = withDefaults(defineProps<Props>(), {
+  itemsPerRow: 2,
 })
+
+const chunkedItems = chunk(items, itemsPerRow)
 </script>

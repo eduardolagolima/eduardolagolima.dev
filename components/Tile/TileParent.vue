@@ -4,34 +4,16 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
-import TileChild from '~/components/Tile/TileChild.vue'
-
+<script setup lang="ts">
 import { Item } from '~/types/item'
 
-const COLUMNS = 12
+interface Props {
+  item: Item
+  itemsPerRow: number
+}
 
-export default defineComponent({
-  components: {
-    TileChild,
-  },
-  props: {
-    item: {
-      type: Object as PropType<Item>,
-      required: true,
-    },
-    itemsPerRow: {
-      type: Number,
-      required: true,
-    },
-  },
-  computed: {
-    horizontalSize(): string {
-      return `is-${COLUMNS / this.itemsPerRow}`
-    },
-  },
-})
+const { item, itemsPerRow } = defineProps<Props>()
+
+const COLUMNS = 12
+const horizontalSize = `is-${COLUMNS / itemsPerRow}`
 </script>

@@ -26,32 +26,17 @@
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
+<script setup lang="ts">
 import { experiences } from '~/data/experiences'
 import { contacts } from '~/data/contacts'
 import { Experience } from '~/types/experience'
 
 definePageMeta({ layout: 'about' })
 
-export default defineComponent({
-  name: 'AboutPage',
-  data: () => ({
-    contacts,
-  }),
-  computed: {
-    currentJob() {
-      return experiences.find(({ currentJob }) => currentJob)!
-    },
-    graduation() {
-      return experiences.find(({ graduation }) => graduation)!
-    },
-  },
-  methods: {
-    formatExperience({ role, company }: Experience) {
-      return `${role} - ${company}`
-    },
-  },
-})
+const currentJob = experiences.find(({ currentJob }) => currentJob)!
+
+const graduation = experiences.find(({ graduation }) => graduation)!
+
+const formatExperience = ({ role, company }: Experience) =>
+  `${role} - ${company}`
 </script>

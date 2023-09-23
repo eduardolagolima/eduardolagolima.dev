@@ -9,4 +9,7 @@ module.exports = {
     'plugin:nuxt/recommended',
     'prettier',
   ],
+  rules: {
+    'vue/component-api-style': ['error'],
+  },
 }

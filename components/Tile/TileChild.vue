@@ -23,7 +23,7 @@
       </div>
 
       <div v-if="item.actions" class="buttons">
-        <ActionButton
+        <AppButton
           v-for="(action, key) of item.actions"
           :key="key"
           :icon="action.icon"
@@ -35,23 +35,12 @@
   </article>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
-import ActionButton from '~/components/Button/ActionButton.vue'
-
+<script setup lang="ts">
 import { Item } from '~/types/item'
 
-export default defineComponent({
-  components: {
-    ActionButton,
-  },
-  props: {
-    item: {
-      type: Object as PropType<Item>,
-      required: true,
-    },
-  },
-})
+interface Props {
+  item: Item
+}
+
+const { item } = defineProps<Props>()
 </script>

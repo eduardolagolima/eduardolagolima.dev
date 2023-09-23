@@ -9,27 +9,13 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
-import TileParent from '~/components/Tile/TileParent.vue'
-
+<script setup lang="ts">
 import { Item } from '~/types/item'
 
-export default defineComponent({
-  components: {
-    TileParent,
-  },
-  props: {
-    items: {
-      type: Array as PropType<Item[]>,
-      required: true,
-    },
-    itemsPerRow: {
-      type: Number,
-      required: true,
-    },
-  },
-})
+interface Props {
+  items: Item[]
+  itemsPerRow: number
+}
+
+const { items, itemsPerRow } = defineProps<Props>()
 </script>

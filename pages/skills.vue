@@ -6,20 +6,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-import TileWrapper from '~/components/Tile/TileWrapper.vue'
-
+<script setup lang="ts">
 import { skills } from '~/data/skills'
-
-export default defineComponent({
-  name: 'SkillsPage',
-  components: {
-    TileWrapper,
-  },
-  data: () => ({
-    skills,
-  }),
-})
 </script>

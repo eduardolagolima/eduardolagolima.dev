@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <MainHeader />
+    <AppHeader />
 
     <div class="main-content columns">
       <div class="container column">
@@ -8,21 +8,6 @@
       </div>
     </div>
 
-    <MainFooter />
+    <AppFooter />
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-import MainHeader from '~/components/Header/MainHeader.vue'
-import MainFooter from '~/components/Footer/MainFooter.vue'
-
-export default defineComponent({
-  name: 'DefaultLayout',
-  components: {
-    MainHeader,
-    MainFooter,
-  },
-})
-</script>

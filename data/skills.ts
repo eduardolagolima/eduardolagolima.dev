@@ -3,18 +3,25 @@ import { Item } from '~/types/item'
 export const skills: Item[] = [
   {
     title: 'Frontend',
-    tags: ['Javascript', 'Vue.js', 'React.js', 'React Native'],
+    tags: [
+      'TypeScript',
+      'Vue.js',
+      'Nuxt.js',
+      'Angular',
+      'React',
+      'React Native',
+    ],
   },
   {
     title: 'Backend',
-    tags: ['PHP', 'Laravel', 'Node.js', 'Express.js'],
+    tags: ['TypeScript', 'Node.js', 'Express', 'Fastify ', 'PHP', 'Laravel'],
   },
   {
     title: 'Database',
-    tags: ['PostgreSQL', 'MySQL', 'MongoDB'],
+    tags: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis'],
   },
   {
     title: 'Outras',
-    tags: ['Linux', 'Docker', 'Shell Script', 'Kanban', 'Scrum'],
+    tags: ['Docker', 'Netlify', 'Linux', 'Shell Script'],
   },
 ]

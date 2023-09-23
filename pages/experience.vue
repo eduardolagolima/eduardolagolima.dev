@@ -29,15 +29,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
+<script setup lang="ts">
 import { experiences } from '~/data/experiences'
-
-export default defineComponent({
-  name: 'ExperiencePage',
-  data: () => ({
-    experiences,
-  }),
-})
 </script>

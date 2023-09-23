@@ -35,15 +35,8 @@
   </nav>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
+<script setup lang="ts">
 import { headerItems } from '~/data/headerItems'
 
-export default defineComponent({
-  data: () => ({
-    headerItems,
-    isOpened: false,
-  }),
-})
+const isOpened = ref(false)
 </script>

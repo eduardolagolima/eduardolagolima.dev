@@ -6,15 +6,6 @@
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
+<script setup lang="ts">
 import { courses } from '~/data/courses'
-
-export default defineComponent({
-  name: 'CoursesPage',
-  data: () => ({
-    courses,
-  }),
-})
 </script>

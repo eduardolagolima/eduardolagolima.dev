@@ -7,29 +7,21 @@
   />
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
+<script setup lang="ts">
 import chunk from 'lodash.chunk'
 
 import { Item } from '~/types/item'
 
-export default defineComponent({
-  props: {
-    items: {
-      type: Array as PropType<Item[]>,
-      required: true,
-    },
-    itemsPerRow: {
-      type: Number,
-      default: 2,
-    },
-  },
-  computed: {
-    chunks() {
-      return chunk(this.items, this.itemsPerRow)
-    },
-  },
+interface Props {
+  items: Item[]
+  itemsPerRow?: number
+}
+
+const { items, itemsPerRow } = withDefaults(defineProps<Props>(), {
+  itemsPerRow: 2,
+})
+
+const chunks = computed(() => {
+  return chunk(items, itemsPerRow)
 })
 </script>

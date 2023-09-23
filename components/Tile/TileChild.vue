@@ -35,18 +35,12 @@
   </article>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
+<script setup lang="ts">
 import { Item } from '~/types/item'
 
-export default defineComponent({
-  props: {
-    item: {
-      type: Object as PropType<Item>,
-      required: true,
-    },
-  },
-})
+interface Props {
+  item: Item
+}
+
+const { item } = defineProps<Props>()
 </script>

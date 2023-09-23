@@ -11,23 +11,12 @@
   </a>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+interface Props {
+  url: string
+  label: string
+  icon: string
+}
 
-export default defineComponent({
-  props: {
-    icon: {
-      type: String,
-      default: null,
-    },
-    label: {
-      type: String,
-      required: true,
-    },
-    url: {
-      type: String,
-      default: null,
-    },
-  },
-})
+const { url, label, icon } = defineProps<Props>()
 </script>

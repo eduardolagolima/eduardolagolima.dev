@@ -4,29 +4,19 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropType } from 'vue'
-
+<script setup lang="ts">
 import { Item } from '~/types/item'
+
+interface Props {
+  item: Item
+  itemsPerRow: number
+}
+
+const { item, itemsPerRow } = defineProps<Props>()
 
 const COLUMNS = 12
 
-export default defineComponent({
-  props: {
-    item: {
-      type: Object as PropType<Item>,
-      required: true,
-    },
-    itemsPerRow: {
-      type: Number,
-      required: true,
-    },
-  },
-  computed: {
-    horizontalSize(): string {
-      return `is-${COLUMNS / this.itemsPerRow}`
-    },
-  },
+const horizontalSize = computed(() => {
+  return `is-${COLUMNS / itemsPerRow}`
 })
 </script>

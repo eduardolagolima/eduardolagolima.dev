@@ -12,7 +12,7 @@
     <div class="column has-text-centered">
       <p>{{ formatExperience(currentJob) }}</p>
       <p>{{ formatExperience(graduation) }}</p>
-      <p>Passo Fundo/RS</p>
+      <p>Porto Alegre/RS</p>
     </div>
     <div class="is-flex is-justify-content-center">
       <template v-for="{ url, icon } of contacts" :key="url">

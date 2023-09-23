@@ -21,7 +21,5 @@ const { items, itemsPerRow } = withDefaults(defineProps<Props>(), {
   itemsPerRow: 2,
 })
 
-const chunks = computed(() => {
-  return chunk(items, itemsPerRow)
-})
+const chunks = chunk(items, itemsPerRow)
 </script>

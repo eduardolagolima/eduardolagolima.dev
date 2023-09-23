@@ -33,15 +33,10 @@ import { Experience } from '~/types/experience'
 
 definePageMeta({ layout: 'about' })
 
-const currentJob = computed(() => {
-  return experiences.find(({ currentJob }) => currentJob)!
-})
+const currentJob = experiences.find(({ currentJob }) => currentJob)!
 
-const graduation = computed(() => {
-  return experiences.find(({ graduation }) => graduation)!
-})
+const graduation = experiences.find(({ graduation }) => graduation)!
 
-const formatExperience = ({ role, company }: Experience) => {
-  return `${role} - ${company}`
-}
+const formatExperience = ({ role, company }: Experience) =>
+  `${role} - ${company}`
 </script>

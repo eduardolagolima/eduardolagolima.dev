@@ -15,8 +15,5 @@ interface Props {
 const { item, itemsPerRow } = defineProps<Props>()
 
 const COLUMNS = 12
-
-const horizontalSize = computed(() => {
-  return `is-${COLUMNS / itemsPerRow}`
-})
+const horizontalSize = `is-${COLUMNS / itemsPerRow}`
 </script>

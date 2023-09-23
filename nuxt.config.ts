@@ -1,13 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
-  modules: ['@nuxtjs/eslint-module'],
-  css: [
-    '~/node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
-    '~/node_modules/@mdi/font/css/materialdesignicons.min.css',
-    '~/assets/css/bulma.scss',
-    '~/assets/css/global.css',
-  ],
   app: {
     head: {
       title: 'Eduardo Lago Lima',
@@ -27,4 +19,18 @@ export default defineNuxtConfig({
       ],
     },
   },
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
+  css: [
+    '~/node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
+    '~/node_modules/@mdi/font/css/materialdesignicons.min.css',
+    '~/assets/css/bulma.scss',
+    '~/assets/css/global.css',
+  ],
+  devtools: { enabled: true },
+  modules: ['@nuxtjs/eslint-module'],
 })

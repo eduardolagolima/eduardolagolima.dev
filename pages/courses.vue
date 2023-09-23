@@ -9,15 +9,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import TileWrapper from '~/components/Tile/TileWrapper.vue'
-
 import { courses } from '~/data/courses'
 
 export default defineComponent({
   name: 'CoursesPage',
-  components: {
-    TileWrapper,
-  },
   data: () => ({
     courses,
   }),

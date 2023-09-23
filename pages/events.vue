@@ -9,15 +9,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import TileWrapper from '~/components/Tile/TileWrapper.vue'
-
 import { events } from '~/data/events'
 
 export default defineComponent({
   name: 'EventsPage',
-  components: {
-    TileWrapper,
-  },
   data: () => ({
     events,
   }),

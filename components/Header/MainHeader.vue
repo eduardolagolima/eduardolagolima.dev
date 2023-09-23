@@ -35,14 +35,9 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import MainHeaderItem from '~/components/Header/MainHeaderItem.vue'
-
 import { headerItems } from '~/data/headerItems'
 
 export default defineComponent({
-  components: {
-    MainHeaderItem,
-  },
   data: () => ({
     headerItems,
     isOpened: false,

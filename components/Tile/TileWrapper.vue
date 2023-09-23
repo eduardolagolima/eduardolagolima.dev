@@ -13,14 +13,9 @@ import type { PropType } from 'vue'
 
 import chunk from 'lodash.chunk'
 
-import TileAncestor from '~/components/Tile/TileAncestor.vue'
-
 import { Item } from '~/types/item'
 
 export default defineComponent({
-  components: {
-    TileAncestor,
-  },
   props: {
     items: {
       type: Array as PropType<Item[]>,

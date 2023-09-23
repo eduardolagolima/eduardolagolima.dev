@@ -13,14 +13,9 @@
 import { defineComponent } from 'vue'
 import type { PropType } from 'vue'
 
-import TileParent from '~/components/Tile/TileParent.vue'
-
 import { Item } from '~/types/item'
 
 export default defineComponent({
-  components: {
-    TileParent,
-  },
   props: {
     items: {
       type: Array as PropType<Item[]>,

@@ -12,7 +12,7 @@ export const projects: Item[] = [
   {
     icon: 'mdi mdi-36px mdi-clipboard-text',
     title: 'statement-parser',
-    subtitle: 'CLI para parsear os extratos da Avenue e Clear',
+    subtitle: 'CLI para extrair os proventos dos extratos da Avenue e B3',
     tags: ['TypeScript'],
     actions: [getRepository('statement-parser')],
   },

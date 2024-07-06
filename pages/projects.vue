@@ -2,7 +2,7 @@
   <section class="section">
     <h3 class="title is-3 has-text-grey">Projetos</h3>
 
-    <TileWrapper :items="projects" />
+    <AppCards :items="projects" />
   </section>
 </template>
 

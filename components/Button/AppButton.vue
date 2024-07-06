@@ -1,9 +1,5 @@
 <template>
-  <a
-    class="button is-primary is-inverted is-outlined"
-    target="_blank"
-    :href="url"
-  >
+  <a class="button" target="_blank" :href="url">
     <span>{{ label }}</span>
     <span class="icon is-small">
       <i :class="icon"></i>

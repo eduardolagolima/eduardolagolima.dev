@@ -26,10 +26,14 @@ export default defineNuxtConfig({
     },
   ],
   css: [
+    // dependencies
     '~/node_modules/bulma-timeline/dist/css/bulma-timeline.min.css',
     '~/node_modules/@mdi/font/css/materialdesignicons.min.css',
-    '~/assets/css/bulma.scss',
-    '~/assets/css/global.css',
+    '~/node_modules/bulma/css/bulma.min.css',
+
+    // custom
+    '~/assets/css/bulma.css',
+    '~/assets/css/main.css',
   ],
   devtools: { enabled: true },
   modules: ['@nuxtjs/eslint-module'],

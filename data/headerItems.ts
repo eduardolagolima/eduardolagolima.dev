@@ -1,4 +1,4 @@
-import { HeaderItems } from '~/types/headerItems'
+import type { HeaderItems } from '~/types/headerItems'
 
 export const headerItems: HeaderItems[] = [
   {

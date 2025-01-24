@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     head: {
       title: 'Eduardo Lago Lima',
       htmlAttrs: {
+        'data-theme': 'dark',
         lang: 'pt-br',
       },
       meta: [

@@ -12,10 +12,6 @@ export default defineNuxtConfig({
           content:
             'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
         },
-        {
-          name: 'theme-color',
-          content: '#7957d5',
-        },
       ],
     },
   },
@@ -35,6 +31,7 @@ export default defineNuxtConfig({
     '~/assets/css/bulma.css',
     '~/assets/css/main.css',
   ],
+  compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxtjs/eslint-module'],
 })

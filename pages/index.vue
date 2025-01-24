@@ -11,7 +11,7 @@
     </div>
     <div class="column has-text-centered">
       <p>{{ formatExperience(currentJob) }}</p>
-      <p>{{ formatExperience(graduation) }}</p>
+      <p>Bacharelado, Sistemas de Informação - IMED</p>
       <p>Porto Alegre/RS</p>
     </div>
     <div class="is-flex is-justify-content-center">
@@ -27,15 +27,13 @@
 </template>
 
 <script setup lang="ts">
-import { experiences } from '~/data/experiences'
 import { contacts } from '~/data/contacts'
-import { Experience } from '~/types/experience'
+import { experiences } from '~/data/experiences'
+import type { Experience } from '~/types/experience'
 
 definePageMeta({ layout: 'about' })
 
-const currentJob = experiences.find(({ currentJob }) => currentJob)!
-
-const graduation = experiences.find(({ graduation }) => graduation)!
+const currentJob = experiences[0]
 
 const formatExperience = ({ role, company }: Experience) =>
   `${role} - ${company}`

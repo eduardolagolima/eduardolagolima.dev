@@ -1,5 +1,5 @@
 import { getRepository } from '~/factories/action'
-import { Item } from '~/types/item'
+import type { Item } from '~/types/item'
 
 export const projects: Item[] = [
   {

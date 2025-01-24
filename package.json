@@ -11,15 +11,14 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "?",
-    "lint": "?",
+    "biome:check": "npx @biomejs/biome check --write",
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "?",
-    "*.**": "?"
+    "*": "npm run biome:check"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
     "@types/node": "^22.10.10",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.2"

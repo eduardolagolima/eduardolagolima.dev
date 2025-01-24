@@ -1,4 +1,4 @@
-import { Action } from '~/types/action'
+import type { Action } from '~/types/action'
 
 const getAction = (icon: string, label: string, url: string): Action => ({
   icon,

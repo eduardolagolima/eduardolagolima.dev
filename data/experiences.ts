@@ -2,10 +2,15 @@ import { Experience } from '~/types/experience'
 
 export const experiences: Experience[] = [
   {
+    when: 'Setembro de 2024',
+    role: 'Senior Software Engineer',
+    company: 'Questrade Financial Group',
+    currentJob: true,
+  },
+  {
     when: 'Março de 2022',
     role: 'Software Engineer',
     company: 'Questrade Financial Group',
-    currentJob: true,
   },
   {
     when: 'Agosto de 2021',

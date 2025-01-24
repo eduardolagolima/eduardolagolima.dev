@@ -4,9 +4,7 @@
 
     <div class="timeline is-centered">
       <header class="timeline-header">
-        <span class="tag is-medium is-primary">{{
-          new Date().getFullYear()
-        }}</span>
+        <span class="tag is-medium">{{ new Date().getFullYear() }}</span>
       </header>
 
       <div
@@ -14,7 +12,7 @@
         :key="key"
         class="timeline-item"
       >
-        <div class="timeline-marker" />
+        <div class="timeline-marker"></div>
         <div class="timeline-content">
           <p class="heading">{{ experience.when }}</p>
           <p>{{ experience.role }}</p>
@@ -23,7 +21,7 @@
       </div>
 
       <div class="timeline-header">
-        <span class="tag is-medium is-primary">2016</span>
+        <span class="tag is-medium">2016</span>
       </div>
     </div>
   </section>

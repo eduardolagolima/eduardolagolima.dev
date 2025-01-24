@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <NuxtLink class="navbar-item" to="/"> Eduardo Lago Lima </NuxtLink>
 
@@ -12,6 +12,7 @@
         data-target="navbar"
         @click="isOpened = !isOpened"
       >
+        <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -33,6 +34,8 @@
       </div>
     </div>
   </nav>
+
+  <hr class="m-0" />
 </template>
 
 <script setup lang="ts">
